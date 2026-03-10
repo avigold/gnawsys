@@ -151,11 +151,33 @@ header {
 .heb-row {
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .heb-row .heb {
   flex: 1;
+}
+
+.speed-btn {
+  appearance: none;
+  border: 1px solid var(--badge-border);
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  border-radius: 4px;
+  font-size: 0.55rem;
+  font-weight: 600;
+  padding: 0 0.25rem;
+  height: 1.6rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s;
+  line-height: 1.6rem;
+  white-space: nowrap;
+}
+
+.speed-btn:hover {
+  background: var(--hl);
+  border-color: var(--hl-border);
 }
 
 /* Hover highlighting */
@@ -240,6 +262,7 @@ function buildCard(s) {
   el.innerHTML =
     `<div class="heb-row">` +
       `<button class="play-btn"${audioAttr} data-hebrew="${esc(s.hebrew)}" aria-label="Play">&#9654;</button>` +
+      `<button class="speed-btn" aria-label="Playback speed">1x</button>` +
       `<div class="heb">${hebHtml}</div>` +
     `</div>` +
     `<div class="tr">${trHtml}</div>` +
@@ -273,8 +296,24 @@ document.addEventListener('pointerleave', (e) => {
 
 // Audio playback
 let currentAudio = null;
+const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5];
 
+function getCardSpeed(card) {
+  const btn = card.querySelector('.speed-btn');
+  return btn ? parseFloat(btn.textContent) : 1;
+}
+
+// Speed button: cycle through rates
 document.addEventListener('click', (e) => {
+  const sbtn = e.target.closest('.speed-btn');
+  if (sbtn) {
+    const cur = parseFloat(sbtn.textContent);
+    const idx = SPEEDS.indexOf(cur);
+    const next = SPEEDS[(idx + 1) % SPEEDS.length];
+    sbtn.textContent = next === 1 ? '1x' : next + 'x';
+    return;
+  }
+
   const btn = e.target.closest('.play-btn');
   if (!btn) return;
 
@@ -283,25 +322,31 @@ document.addEventListener('click', (e) => {
     currentAudio.pause();
     currentAudio = null;
   }
+  speechSynthesis.cancel();
 
+  const card = btn.closest('.sentence');
+  const rate = card ? getCardSpeed(card) : 1;
   const audioId = btn.dataset.audio;
+
   if (audioId) {
     // Pre-generated audio file
     const audio = new Audio(`audio/${audioId}.opus`);
+    audio.playbackRate = rate;
     currentAudio = audio;
     audio.play().catch(() => {
       // Opus not supported — fall back to Web Speech API
-      speakHebrew(btn.dataset.hebrew);
+      speakHebrew(btn.dataset.hebrew, rate);
     });
   } else {
     // Live-generated sentence — use Web Speech API
-    speakHebrew(btn.dataset.hebrew);
+    speakHebrew(btn.dataset.hebrew, rate);
   }
 });
 
-function speakHebrew(text) {
+function speakHebrew(text, rate = 1) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'he-IL';
+  u.rate = rate;
   speechSynthesis.speak(u);
 }
 
