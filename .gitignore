@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 .claude/
 pipeline_review.json
+node_modules/

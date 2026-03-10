@@ -121,6 +121,43 @@ header {
   white-space: nowrap;
 }
 
+/* Play button */
+.play-btn {
+  appearance: none;
+  border: 1px solid var(--badge-border);
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.play-btn:hover {
+  background: var(--hl);
+  border-color: var(--hl-border);
+}
+
+.play-btn:active {
+  transform: scale(0.92);
+}
+
+.heb-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.heb-row .heb {
+  flex: 1;
+}
+
 /* Hover highlighting */
 .w {
   border-radius: 3px;
@@ -198,8 +235,13 @@ function buildCard(s) {
     .map(t => `<span class="badge">${esc(t)}</span>`)
     .join('');
 
+  const audioAttr = s.audio ? ` data-audio="${esc(s.audio)}"` : '';
+
   el.innerHTML =
-    `<div class="heb">${hebHtml}</div>` +
+    `<div class="heb-row">` +
+      `<button class="play-btn"${audioAttr} data-hebrew="${esc(s.hebrew)}" aria-label="Play">&#9654;</button>` +
+      `<div class="heb">${hebHtml}</div>` +
+    `</div>` +
     `<div class="tr">${trHtml}</div>` +
     `<div class="en"${aligned ? '' : ' data-noalign="1"'}>${enHtml}</div>` +
     (badges ? `<div class="badges">${badges}</div>` : '');
@@ -228,6 +270,40 @@ document.addEventListener('pointerleave', (e) => {
   const enDiv = card.querySelector('.en.hl-line');
   if (enDiv) enDiv.classList.remove('hl-line');
 }, true);
+
+// Audio playback
+let currentAudio = null;
+
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.play-btn');
+  if (!btn) return;
+
+  // Stop any currently playing audio
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio = null;
+  }
+
+  const audioId = btn.dataset.audio;
+  if (audioId) {
+    // Pre-generated audio file
+    const audio = new Audio(`audio/${audioId}.opus`);
+    currentAudio = audio;
+    audio.play().catch(() => {
+      // Opus not supported — fall back to Web Speech API
+      speakHebrew(btn.dataset.hebrew);
+    });
+  } else {
+    // Live-generated sentence — use Web Speech API
+    speakHebrew(btn.dataset.hebrew);
+  }
+});
+
+function speakHebrew(text) {
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'he-IL';
+  speechSynthesis.speak(u);
+}
 
 async function load() {
   if (busy) return;

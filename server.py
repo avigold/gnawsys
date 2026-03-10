@@ -16,6 +16,7 @@ class Handler(BaseHTTPRequestHandler):
         '.html': 'text/html',
         '.js': 'text/javascript',
         '.json': 'application/json',
+        '.opus': 'audio/opus',
     }
 
     def do_GET(self):
@@ -32,8 +33,12 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(body)
         else:
-            # Serve static files (.js, .json)
+            # Serve static files (.js, .json, .opus)
             name = parsed.path.lstrip('/')
+            if '..' in name:
+                self.send_response(403)
+                self.end_headers()
+                return
             ext = os.path.splitext(name)[1]
             if ext in self._STATIC:
                 self._serve_file(name, self._STATIC[ext])

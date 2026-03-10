@@ -1,0 +1,16 @@
+{
+  "name": "gnawsys",
+  "version": "1.0.0",
+  "description": "Rule-based Hebrew sentence generator for language practice. Generates grammatically correct Hebrew sentences with transliterations and English translations — no LLM at runtime.",
+  "type": "module",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

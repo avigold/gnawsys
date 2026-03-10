@@ -26,7 +26,8 @@ Templates are selected by weighted random choice. The generator enforces gender/
 
 ## Requirements
 
-Python 3.8+ (stdlib only, no dependencies).
+- Python 3.8+ (stdlib only — for the local dev server and pipeline)
+- Node.js 18+ and TypeScript (only needed if modifying the generator)
 
 ## Quick start
 
@@ -38,16 +39,30 @@ python3 server.py
 open http://localhost:7749
 ```
 
-The web interface displays an infinite-scrolling feed of generated sentences. Scroll down to load more.
+The web interface displays an infinite-scrolling feed of generated sentences. Sentences are generated entirely client-side in JavaScript — scroll down to load more.
+
+### Building from TypeScript
+
+The client-side generator source is `generator.ts`. After making changes, recompile:
+
+```bash
+npm install      # first time only
+npx tsc
+```
+
+This produces `generator.js` in place. Do not edit `generator.js` directly — it is compiled output.
 
 ## Files
 
 | File | Description |
 |---|---|
-| `generator.py` | Core sentence generator — 56 templates, grammar rules, helpers |
+| `generator.ts` | Client-side sentence generator (TypeScript source) — 56 templates, grammar rules, helpers |
+| `generator.js` | Compiled output from `generator.ts` (do not edit directly) |
+| `generator.py` | Python sentence generator (used by the server API and pipeline) |
 | `generator_data.json` | All vocabulary data (verbs, nouns, adjectives, etc.) in machine-editable JSON |
-| `server.py` | HTTP server (port 7749) serving the web UI and `/api/sentences` endpoint |
-| `index.html` | Minimal frontend with infinite scroll |
+| `server.py` | HTTP server (port 7749) serving the web UI |
+| `index.html` | Minimal frontend with infinite scroll, client-side generation |
+| `tsconfig.json` | TypeScript compiler configuration |
 | `pipeline.py` | Automated pipeline for integrating new vocabulary |
 | `hebrew_vocab.json` | Source vocabulary export from Citizen Cafe |
 | `hebrew_words.json` | Individual words extracted with transliterations |
@@ -144,11 +159,12 @@ Current data:
 ```
 hebrew_vocab.json ──→ pipeline.py ──→ generator_data.json
                                             │
-                                            ▼
-                                      generator.py ──→ server.py ──→ index.html
-                                            │
-                                            ▼
-                                    { hebrew, transliteration, english }
+                      ┌─────────────────────┤
+                      ▼                     ▼
+                generator.py          generator.ts ──→ generator.js
+                      │                                     │
+                      ▼                                     ▼
+                server.py (/api)                 index.html (client-side)
 ```
 
-The generator is purely rule-based. All randomness comes from `random.choice()` / `random.choices()` selecting templates, subjects, verbs, and complements. Grammar agreement is enforced by filtering valid subject-verb pairs before selection.
+The generator is purely rule-based. All randomness comes from weighted random selection of templates, subjects, verbs, and complements. Grammar agreement is enforced by filtering valid subject-verb pairs before selection. The client-side JavaScript generator is a TypeScript port of the Python original — both share the same `generator_data.json` vocabulary.
