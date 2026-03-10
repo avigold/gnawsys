@@ -19,7 +19,7 @@ The generator combines **56 sentence templates** with a vocabulary database to p
 
 Each sentence includes:
 - **Hebrew** text (right-to-left)
-- **Transliteration** (romanized pronunciation)
+- **Transliteration** (romanised pronunciation)
 - **English** translation
 
 Templates are selected by weighted random choice. The generator enforces gender/number agreement between subjects, verbs, and adjectives, and handles Hebrew grammar rules like the direct object marker את.
