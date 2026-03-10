@@ -990,19 +990,14 @@
         "dinner"
       ],
       [
-        "העוגה",
-        "ha'uga",
+        "את העוגה",
+        "et ha'uga",
         "the cake"
       ],
       [
         "ארוחת צהריים",
         "arukhat tsohorayim",
         "lunch"
-      ],
-      [
-        "סושי",
-        "sushi",
-        "sushi"
       ]
     ],
     "drink": [
@@ -1194,9 +1189,9 @@
         "a phone"
       ],
       [
-        "העוגה",
-        "ha'uga",
-        "a cake"
+        "את העוגה",
+        "et ha'uga",
+        "the cake"
       ]
     ],
     "seeable": [
