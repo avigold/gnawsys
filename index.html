@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>gnawsys</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23222'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='%23e4e4e4' font-family='serif'>ג</text></svg>">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -15,6 +16,11 @@
   --translit: #6b6b6b;
   --english: #9a9a9a;
   --header: #bbb;
+  --badge-bg: #f0f0f0;
+  --badge-fg: #777;
+  --badge-border: #e0e0e0;
+  --hl: rgba(59, 130, 246, 0.15);
+  --hl-border: rgba(59, 130, 246, 0.35);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,6 +32,11 @@
     --translit: #7a7a7a;
     --english: #555;
     --header: #444;
+    --badge-bg: #1e1e1e;
+    --badge-fg: #666;
+    --badge-border: #2a2a2a;
+    --hl: rgba(59, 130, 246, 0.12);
+    --hl-border: rgba(59, 130, 246, 0.3);
   }
 }
 
@@ -90,6 +101,45 @@ header {
   line-height: 1.4;
 }
 
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.55rem;
+}
+
+.badge {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  border: 1px solid var(--badge-border);
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* Hover highlighting */
+.w {
+  border-radius: 3px;
+  padding: 0 1px;
+  transition: background 0.1s, box-shadow 0.1s;
+  cursor: default;
+}
+
+.w.hl {
+  background: var(--hl);
+  box-shadow: 0 0 0 1.5px var(--hl-border);
+}
+
+.en.hl-line {
+  background: var(--hl);
+  border-radius: 3px;
+  box-shadow: 0 0 0 1.5px var(--hl-border);
+}
+
 #sentinel { height: 1px; }
 
 @media (max-width: 480px) {
@@ -97,6 +147,8 @@ header {
   header { padding: 1.5rem 0 1rem; }
   .sentence { padding: 1rem 1.1rem; border-radius: 8px; }
   .heb { font-size: 1.3rem; }
+  .badges { gap: 0.25rem; margin-top: 0.45rem; }
+  .badge { font-size: 0.6rem; padding: 0.12rem 0.35rem; }
 }
 </style>
 </head>
@@ -116,6 +168,77 @@ function esc(s) {
   return d.innerHTML;
 }
 
+function wrapWords(text, cls) {
+  return text.split(/\s+/).map((w, i) =>
+    `<span class="w" data-w="${i}">${esc(w)}</span>`
+  ).join(' ');
+}
+
+function buildCard(s) {
+  const el = document.createElement('div');
+  el.className = 'sentence';
+
+  const heWords = s.hebrew.split(/\s+/);
+  const trWords = s.transliteration.split(/\s+/);
+  const enWords = s.english.split(/\s+/);
+
+  // Hebrew and transliteration always have matching word counts
+  const hebHtml = heWords.map((w, i) =>
+    `<span class="w" data-w="${i}">${esc(w)}</span>`
+  ).join(' ');
+
+  const trHtml = trWords.map((w, i) =>
+    `<span class="w" data-w="${i}">${esc(w)}</span>`
+  ).join(' ');
+
+  // English: if same word count, align; otherwise no per-word spans
+  const aligned = enWords.length === heWords.length;
+  const enHtml = aligned
+    ? enWords.map((w, i) => `<span class="w" data-w="${i}">${esc(w)}</span>`).join(' ')
+    : esc(s.english);
+
+  // Badges from tag
+  const badges = (s.tag || '').split(',')
+    .map(t => t.trim())
+    .filter(Boolean)
+    .map(t => `<span class="badge">${esc(t)}</span>`)
+    .join('');
+
+  el.innerHTML =
+    `<div class="heb">${hebHtml}</div>` +
+    `<div class="tr">${trHtml}</div>` +
+    `<div class="en"${aligned ? '' : ' data-noalign="1"'}>${enHtml}</div>` +
+    (badges ? `<div class="badges">${badges}</div>` : '');
+
+  return el;
+}
+
+// Hover highlighting
+document.addEventListener('pointerenter', (e) => {
+  const w = e.target.closest('.w');
+  if (!w) return;
+  const card = w.closest('.sentence');
+  if (!card) return;
+  const idx = w.dataset.w;
+
+  // Highlight matching words in all rows
+  card.querySelectorAll(`.w[data-w="${idx}"]`).forEach(el => el.classList.add('hl'));
+
+  // If English isn't aligned, highlight the whole line
+  const enDiv = card.querySelector('.en[data-noalign]');
+  if (enDiv) enDiv.classList.add('hl-line');
+}, true);
+
+document.addEventListener('pointerleave', (e) => {
+  const w = e.target.closest('.w');
+  if (!w) return;
+  const card = w.closest('.sentence');
+  if (!card) return;
+  card.querySelectorAll('.w.hl').forEach(el => el.classList.remove('hl'));
+  const enDiv = card.querySelector('.en.hl-line');
+  if (enDiv) enDiv.classList.remove('hl-line');
+}, true);
+
 async function load() {
   if (busy) return;
   busy = true;
@@ -124,13 +247,8 @@ async function load() {
     const data = await r.json();
     const feed = document.getElementById('feed');
     data.forEach((s, i) => {
-      const el = document.createElement('div');
-      el.className = 'sentence';
+      const el = buildCard(s);
       el.style.animationDelay = `${i * 40}ms`;
-      el.innerHTML =
-        `<div class="heb">${esc(s.hebrew)}</div>` +
-        `<div class="tr">${esc(s.transliteration)}</div>` +
-        `<div class="en">${esc(s.english)}</div>`;
       feed.appendChild(el);
     });
   } catch (e) {
