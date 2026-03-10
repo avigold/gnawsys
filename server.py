@@ -12,6 +12,12 @@ PORT = 7749
 
 class Handler(BaseHTTPRequestHandler):
 
+    _STATIC = {
+        '.html': 'text/html',
+        '.js': 'text/javascript',
+        '.json': 'application/json',
+    }
+
     def do_GET(self):
         parsed = urlparse(self.path)
         if parsed.path in ('/', '/index.html'):
@@ -26,8 +32,14 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(body)
         else:
-            self.send_response(404)
-            self.end_headers()
+            # Serve static files (.js, .json)
+            name = parsed.path.lstrip('/')
+            ext = os.path.splitext(name)[1]
+            if ext in self._STATIC:
+                self._serve_file(name, self._STATIC[ext])
+            else:
+                self.send_response(404)
+                self.end_headers()
 
     def _serve_file(self, name, ctype):
         base = os.path.dirname(os.path.abspath(__file__))

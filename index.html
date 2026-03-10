@@ -158,23 +158,17 @@ header {
   <div id="feed"></div>
   <div id="sentinel"></div>
 </div>
-<script>
+<script type="module">
+import { init, generateBatch } from './generator.js';
+
 const BATCH = 20;
 let busy = false;
-let pool = [];
-let poolIdx = 0;
+let ready = false;
 
 function esc(s) {
   const d = document.createElement('div');
   d.textContent = s;
   return d.innerHTML;
-}
-
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.random() * (i + 1) | 0;
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
 }
 
 function buildCard(s) {
@@ -235,48 +229,20 @@ document.addEventListener('pointerleave', (e) => {
   if (enDiv) enDiv.classList.remove('hl-line');
 }, true);
 
-function drawBatch() {
-  const feed = document.getElementById('feed');
-  for (let i = 0; i < BATCH; i++) {
-    if (poolIdx >= pool.length) {
-      shuffle(pool);
-      poolIdx = 0;
-    }
-    const el = buildCard(pool[poolIdx++]);
-    el.style.animationDelay = `${i * 40}ms`;
-    feed.appendChild(el);
-  }
-}
-
 async function load() {
   if (busy) return;
   busy = true;
-  if (pool.length === 0) {
-    try {
-      const r = await fetch('sentences.json');
-      pool = await r.json();
-      shuffle(pool);
-    } catch (e) {
-      // Fallback to API for local dev with server.py
-      try {
-        const r = await fetch(`/api/sentences?n=${BATCH}`);
-        const data = await r.json();
-        const feed = document.getElementById('feed');
-        data.forEach((s, i) => {
-          const el = buildCard(s);
-          el.style.animationDelay = `${i * 40}ms`;
-          feed.appendChild(el);
-        });
-        busy = false;
-        return;
-      } catch (e2) {
-        console.error(e2);
-        busy = false;
-        return;
-      }
-    }
+  if (!ready) {
+    await init();
+    ready = true;
   }
-  drawBatch();
+  const data = generateBatch(BATCH);
+  const feed = document.getElementById('feed');
+  data.forEach((s, i) => {
+    const el = buildCard(s);
+    el.style.animationDelay = `${i * 40}ms`;
+    feed.appendChild(el);
+  });
   busy = false;
 }
 
