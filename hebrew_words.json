@@ -1,0 +1,2052 @@
+[
+    {
+        "hebrew": "אביב",
+        "transliteration": "aviv",
+        "translation": "spring"
+    },
+    {
+        "hebrew": "אבל",
+        "transliteration": "aval",
+        "translation": "but"
+    },
+    {
+        "hebrew": "אהבה",
+        "transliteration": "ahava",
+        "translation": "love"
+    },
+    {
+        "hebrew": "אהבתי",
+        "transliteration": "ahavti",
+        "translation": "I loved"
+    },
+    {
+        "hebrew": "או",
+        "transliteration": "o",
+        "translation": "or"
+    },
+    {
+        "hebrew": "אוהב",
+        "transliteration": "ohev",
+        "translation": "loves, likes (m.)"
+    },
+    {
+        "hebrew": "אוהבים",
+        "transliteration": "ohavim",
+        "translation": "love, like (m.pl.)"
+    },
+    {
+        "hebrew": "אוהבת",
+        "transliteration": "ohevet",
+        "translation": "loves, likes (f.)"
+    },
+    {
+        "hebrew": "אוויר",
+        "transliteration": "avir",
+        "translation": "air"
+    },
+    {
+        "hebrew": "אוכל",
+        "transliteration": "okhel",
+        "translation": "food; eats (m.)"
+    },
+    {
+        "hebrew": "אוכלת",
+        "transliteration": "okhelet",
+        "translation": "eats (f.)"
+    },
+    {
+        "hebrew": "אופס",
+        "transliteration": "oops",
+        "translation": "oops"
+    },
+    {
+        "hebrew": "אותה",
+        "transliteration": "ota",
+        "translation": "her (object)"
+    },
+    {
+        "hebrew": "אותו",
+        "transliteration": "oto",
+        "translation": "him (object)"
+    },
+    {
+        "hebrew": "אותי",
+        "transliteration": "oti",
+        "translation": "me (object)"
+    },
+    {
+        "hebrew": "אותך",
+        "transliteration": "otkha",
+        "translation": "you (object)"
+    },
+    {
+        "hebrew": "אותכן",
+        "transliteration": "otkhen",
+        "translation": "you (f.pl., object)"
+    },
+    {
+        "hebrew": "אותם",
+        "transliteration": "otam",
+        "translation": "them (m.)"
+    },
+    {
+        "hebrew": "אותן",
+        "transliteration": "otan",
+        "translation": "them (f.)"
+    },
+    {
+        "hebrew": "אותנו",
+        "transliteration": "otanu",
+        "translation": "us (object)"
+    },
+    {
+        "hebrew": "אז",
+        "transliteration": "az",
+        "translation": "then, so"
+    },
+    {
+        "hebrew": "אחד",
+        "transliteration": "ekhad",
+        "translation": "one (m.)"
+    },
+    {
+        "hebrew": "אחוז",
+        "transliteration": "akhuz",
+        "translation": "percent"
+    },
+    {
+        "hebrew": "אחרי",
+        "transliteration": "akharei",
+        "translation": "after"
+    },
+    {
+        "hebrew": "אחת",
+        "transliteration": "akhat",
+        "translation": "one (f.)"
+    },
+    {
+        "hebrew": "איטליה",
+        "transliteration": "italya",
+        "translation": "Italy"
+    },
+    {
+        "hebrew": "איך",
+        "transliteration": "eikh",
+        "translation": "how"
+    },
+    {
+        "hebrew": "אימייל",
+        "transliteration": "imeyl",
+        "translation": "email"
+    },
+    {
+        "hebrew": "אין",
+        "transliteration": "ein",
+        "translation": "there isn't, no"
+    },
+    {
+        "hebrew": "איפה",
+        "transliteration": "eifo",
+        "translation": "where"
+    },
+    {
+        "hebrew": "איתך",
+        "transliteration": "itkha",
+        "translation": "with you"
+    },
+    {
+        "hebrew": "איתם",
+        "transliteration": "itam",
+        "translation": "with them"
+    },
+    {
+        "hebrew": "איתנו",
+        "transliteration": "itanu",
+        "translation": "with us"
+    },
+    {
+        "hebrew": "אכלה",
+        "transliteration": "akhla",
+        "translation": "she ate"
+    },
+    {
+        "hebrew": "אכלו",
+        "transliteration": "akhlu",
+        "translation": "they ate"
+    },
+    {
+        "hebrew": "אכלנו",
+        "transliteration": "akhalnu",
+        "translation": "we ate"
+    },
+    {
+        "hebrew": "אכלת",
+        "transliteration": "akhalta",
+        "translation": "you ate"
+    },
+    {
+        "hebrew": "אכלתי",
+        "transliteration": "akhalti",
+        "translation": "I ate"
+    },
+    {
+        "hebrew": "אמר",
+        "transliteration": "amar",
+        "translation": "he said"
+    },
+    {
+        "hebrew": "אמרה",
+        "transliteration": "amra",
+        "translation": "she said"
+    },
+    {
+        "hebrew": "אמרת",
+        "transliteration": "amarta",
+        "translation": "you said"
+    },
+    {
+        "hebrew": "אמרתי",
+        "transliteration": "amarti",
+        "translation": "I said"
+    },
+    {
+        "hebrew": "אנחנו",
+        "transliteration": "anakhnu",
+        "translation": "we"
+    },
+    {
+        "hebrew": "אני",
+        "transliteration": "ani",
+        "translation": "I"
+    },
+    {
+        "hebrew": "אף",
+        "transliteration": "af",
+        "translation": "even; not (in אף פעם)"
+    },
+    {
+        "hebrew": "אפילו",
+        "transliteration": "afilu",
+        "translation": "even"
+    },
+    {
+        "hebrew": "אפשר",
+        "transliteration": "efshar",
+        "translation": "possible, can"
+    },
+    {
+        "hebrew": "ארבע",
+        "transliteration": "arba",
+        "translation": "four"
+    },
+    {
+        "hebrew": "ארבעים",
+        "transliteration": "arbaim",
+        "translation": "forty"
+    },
+    {
+        "hebrew": "ארוחת",
+        "transliteration": "arukhat",
+        "translation": "meal of"
+    },
+    {
+        "hebrew": "ארון",
+        "transliteration": "aron",
+        "translation": "closet, cabinet"
+    },
+    {
+        "hebrew": "ארונות",
+        "transliteration": "aronot",
+        "translation": "closets, cabinets"
+    },
+    {
+        "hebrew": "ארצות",
+        "transliteration": "artsot",
+        "translation": "countries, lands"
+    },
+    {
+        "hebrew": "את",
+        "transliteration": "et",
+        "translation": "you (f.); (object marker)"
+    },
+    {
+        "hebrew": "אתה",
+        "transliteration": "ata",
+        "translation": "you (m.)"
+    },
+    {
+        "hebrew": "אתם",
+        "transliteration": "atem",
+        "translation": "you (m.pl.)"
+    },
+    {
+        "hebrew": "אתמול",
+        "transliteration": "etmol",
+        "translation": "yesterday"
+    },
+    {
+        "hebrew": "בא",
+        "transliteration": "ba",
+        "translation": "comes (m.)"
+    },
+    {
+        "hebrew": "באה",
+        "transliteration": "ba'a",
+        "translation": "comes (f.)"
+    },
+    {
+        "hebrew": "באחת-עשרה",
+        "transliteration": "be'akhat-esre",
+        "translation": "at eleven"
+    },
+    {
+        "hebrew": "באיטליה",
+        "transliteration": "be'italya",
+        "translation": "in Italy"
+    },
+    {
+        "hebrew": "בארצות",
+        "transliteration": "be'artsot",
+        "translation": "in the countries"
+    },
+    {
+        "hebrew": "באת",
+        "transliteration": "bata",
+        "translation": "you came"
+    },
+    {
+        "hebrew": "בבוקר",
+        "transliteration": "baboker",
+        "translation": "in the morning"
+    },
+    {
+        "hebrew": "בבית",
+        "transliteration": "babayit",
+        "translation": "at home, in the house"
+    },
+    {
+        "hebrew": "בגדים",
+        "transliteration": "bgadim",
+        "translation": "clothes"
+    },
+    {
+        "hebrew": "בגלל",
+        "transliteration": "biglal",
+        "translation": "because of"
+    },
+    {
+        "hebrew": "בדרך",
+        "transliteration": "baderekh",
+        "translation": "on the way"
+    },
+    {
+        "hebrew": "בווצאפ",
+        "transliteration": "bevotsap",
+        "translation": "on WhatsApp"
+    },
+    {
+        "hebrew": "בוסית",
+        "transliteration": "bosit",
+        "translation": "boss (f.)"
+    },
+    {
+        "hebrew": "בוקר",
+        "transliteration": "boker",
+        "translation": "morning"
+    },
+    {
+        "hebrew": "בחוץ",
+        "transliteration": "bakhuts",
+        "translation": "outside"
+    },
+    {
+        "hebrew": "בטוח",
+        "transliteration": "batuakh",
+        "translation": "sure (m.)"
+    },
+    {
+        "hebrew": "בטוחה",
+        "transliteration": "betukha",
+        "translation": "sure (f.)"
+    },
+    {
+        "hebrew": "ביום",
+        "transliteration": "bayom",
+        "translation": "during the day"
+    },
+    {
+        "hebrew": "ביונסה",
+        "transliteration": "beyonse",
+        "translation": "Beyonce"
+    },
+    {
+        "hebrew": "בים",
+        "transliteration": "bayam",
+        "translation": "at the sea, at the beach"
+    },
+    {
+        "hebrew": "בינג׳",
+        "transliteration": "binj",
+        "translation": "binge"
+    },
+    {
+        "hebrew": "בישראל",
+        "transliteration": "beyisrael",
+        "translation": "in Israel"
+    },
+    {
+        "hebrew": "בלחץ",
+        "transliteration": "belakhats",
+        "translation": "under pressure, stressed"
+    },
+    {
+        "hebrew": "בלי",
+        "transliteration": "bli",
+        "translation": "without"
+    },
+    {
+        "hebrew": "במטבח",
+        "transliteration": "bamitbakh",
+        "translation": "in the kitchen"
+    },
+    {
+        "hebrew": "במשרד",
+        "transliteration": "bamisrad",
+        "translation": "in the office"
+    },
+    {
+        "hebrew": "בסדר",
+        "transliteration": "beseder",
+        "translation": "okay, alright"
+    },
+    {
+        "hebrew": "בסופ\"ש",
+        "transliteration": "basofash",
+        "translation": "on the weekend"
+    },
+    {
+        "hebrew": "בסלון",
+        "transliteration": "basalon",
+        "translation": "in the living room"
+    },
+    {
+        "hebrew": "בערך",
+        "transliteration": "be'erekh",
+        "translation": "approximately, about"
+    },
+    {
+        "hebrew": "בפגישה",
+        "transliteration": "bapgisha",
+        "translation": "in a meeting"
+    },
+    {
+        "hebrew": "בפנים",
+        "transliteration": "bifnim",
+        "translation": "inside"
+    },
+    {
+        "hebrew": "בצוהריים",
+        "transliteration": "batsohorayim",
+        "translation": "at noon"
+    },
+    {
+        "hebrew": "בקנדה",
+        "transliteration": "bekanada",
+        "translation": "in Canada"
+    },
+    {
+        "hebrew": "בראד",
+        "transliteration": "brad",
+        "translation": "Brad"
+    },
+    {
+        "hebrew": "בשבוע",
+        "transliteration": "bashavua",
+        "translation": "in the week"
+    },
+    {
+        "hebrew": "בשוק",
+        "transliteration": "bashuk",
+        "translation": "at the market"
+    },
+    {
+        "hebrew": "בשמונה",
+        "transliteration": "bishmone",
+        "translation": "at eight"
+    },
+    {
+        "hebrew": "בשנה",
+        "transliteration": "bashana",
+        "translation": "in the year, per year"
+    },
+    {
+        "hebrew": "בשתים-עשרה",
+        "transliteration": "bishteim-esre",
+        "translation": "at twelve"
+    },
+    {
+        "hebrew": "גר",
+        "transliteration": "gar",
+        "translation": "lives, resides (m.)"
+    },
+    {
+        "hebrew": "גרה",
+        "transliteration": "gara",
+        "translation": "lives, resides (f.)"
+    },
+    {
+        "hebrew": "גרת",
+        "transliteration": "garta",
+        "translation": "you lived"
+    },
+    {
+        "hebrew": "דבר",
+        "transliteration": "davar",
+        "translation": "thing"
+    },
+    {
+        "hebrew": "דג",
+        "transliteration": "dag",
+        "translation": "fish"
+    },
+    {
+        "hebrew": "דלת",
+        "transliteration": "delet",
+        "translation": "door"
+    },
+    {
+        "hebrew": "האהבה",
+        "transliteration": "ha'ahava",
+        "translation": "the love"
+    },
+    {
+        "hebrew": "הבגדים",
+        "transliteration": "habgadim",
+        "translation": "the clothes"
+    },
+    {
+        "hebrew": "הבוס",
+        "transliteration": "habos",
+        "translation": "the boss (m.)"
+    },
+    {
+        "hebrew": "הבוסית",
+        "transliteration": "habosit",
+        "translation": "the boss (f.)"
+    },
+    {
+        "hebrew": "הבית",
+        "transliteration": "habayit",
+        "translation": "the house, the home"
+    },
+    {
+        "hebrew": "הביתה",
+        "transliteration": "habayta",
+        "translation": "home, homeward"
+    },
+    {
+        "hebrew": "הבנק",
+        "transliteration": "habank",
+        "translation": "the bank"
+    },
+    {
+        "hebrew": "הברית",
+        "transliteration": "habrit",
+        "translation": "the covenant (as in United States)"
+    },
+    {
+        "hebrew": "הדלת",
+        "transliteration": "hadelet",
+        "translation": "the door"
+    },
+    {
+        "hebrew": "הוא",
+        "transliteration": "hu",
+        "translation": "he"
+    },
+    {
+        "hebrew": "הולכים",
+        "transliteration": "holkhim",
+        "translation": "go, walk (m.pl.)"
+    },
+    {
+        "hebrew": "החדש",
+        "transliteration": "hakhadash",
+        "translation": "the new (m.)"
+    },
+    {
+        "hebrew": "החדשה",
+        "transliteration": "hakhadasha",
+        "translation": "the new (f.)"
+    },
+    {
+        "hebrew": "החדשים",
+        "transliteration": "hakhadashim",
+        "translation": "the new ones (m.pl.)"
+    },
+    {
+        "hebrew": "החלון",
+        "transliteration": "hakhalon",
+        "translation": "the window"
+    },
+    {
+        "hebrew": "הטיסה",
+        "transliteration": "hatisa",
+        "translation": "the flight"
+    },
+    {
+        "hebrew": "הטלפון",
+        "transliteration": "hatelefon",
+        "translation": "the phone"
+    },
+    {
+        "hebrew": "היא",
+        "transliteration": "hi",
+        "translation": "she"
+    },
+    {
+        "hebrew": "היה",
+        "transliteration": "haya",
+        "translation": "was, there was"
+    },
+    {
+        "hebrew": "היום",
+        "transliteration": "hayom",
+        "translation": "today"
+    },
+    {
+        "hebrew": "היין",
+        "transliteration": "hayayin",
+        "translation": "the wine"
+    },
+    {
+        "hebrew": "הכול",
+        "transliteration": "hakol",
+        "translation": "everything"
+    },
+    {
+        "hebrew": "הלבן",
+        "transliteration": "halavan",
+        "translation": "the white"
+    },
+    {
+        "hebrew": "הלינק",
+        "transliteration": "halink",
+        "translation": "the link"
+    },
+    {
+        "hebrew": "הלך",
+        "transliteration": "halakh",
+        "translation": "he went, he walked"
+    },
+    {
+        "hebrew": "הלכה",
+        "transliteration": "halkha",
+        "translation": "she went, she walked"
+    },
+    {
+        "hebrew": "הם",
+        "transliteration": "hem",
+        "translation": "they (m.)"
+    },
+    {
+        "hebrew": "המחשב",
+        "transliteration": "hamakhshev",
+        "translation": "the computer"
+    },
+    {
+        "hebrew": "המקרר",
+        "transliteration": "hamekarer",
+        "translation": "the fridge"
+    },
+    {
+        "hebrew": "המתנה",
+        "transliteration": "hamatana",
+        "translation": "the gift"
+    },
+    {
+        "hebrew": "הסמסטר",
+        "transliteration": "hasemestr",
+        "translation": "the semester"
+    },
+    {
+        "hebrew": "הסרט",
+        "transliteration": "haseret",
+        "translation": "the movie"
+    },
+    {
+        "hebrew": "העוגה",
+        "transliteration": "ha'uga",
+        "translation": "the cake"
+    },
+    {
+        "hebrew": "הפאד",
+        "transliteration": "hapad",
+        "translation": "the pad"
+    },
+    {
+        "hebrew": "הפגישה",
+        "transliteration": "hapgisha",
+        "translation": "the meeting"
+    },
+    {
+        "hebrew": "הצוהריים",
+        "transliteration": "hatsohorayim",
+        "translation": "the noon, the afternoon"
+    },
+    {
+        "hebrew": "הקינוח",
+        "transliteration": "hakinuakh",
+        "translation": "the dessert"
+    },
+    {
+        "hebrew": "הראשון",
+        "transliteration": "harishon",
+        "translation": "the first"
+    },
+    {
+        "hebrew": "הרבה",
+        "transliteration": "harbe",
+        "translation": "a lot, much, many"
+    },
+    {
+        "hebrew": "השולחן",
+        "transliteration": "hashulkhan",
+        "translation": "the table"
+    },
+    {
+        "hebrew": "השיעור",
+        "transliteration": "hashiur",
+        "translation": "the lesson, the class"
+    },
+    {
+        "hebrew": "השמלה",
+        "transliteration": "hasimla",
+        "translation": "the dress"
+    },
+    {
+        "hebrew": "וואטסאפ",
+        "transliteration": "votsap",
+        "translation": "WhatsApp"
+    },
+    {
+        "hebrew": "וחשב",
+        "transliteration": "vekhashav",
+        "translation": "and thought"
+    },
+    {
+        "hebrew": "וחשבתי",
+        "transliteration": "vekhashavti",
+        "translation": "and I thought"
+    },
+    {
+        "hebrew": "זה",
+        "transliteration": "ze",
+        "translation": "this, it"
+    },
+    {
+        "hebrew": "זמן",
+        "transliteration": "zman",
+        "translation": "time"
+    },
+    {
+        "hebrew": "חברים",
+        "transliteration": "khaverim",
+        "translation": "friends"
+    },
+    {
+        "hebrew": "חג",
+        "transliteration": "khag",
+        "translation": "holiday"
+    },
+    {
+        "hebrew": "חגים",
+        "transliteration": "khagim",
+        "translation": "holidays"
+    },
+    {
+        "hebrew": "חדש",
+        "transliteration": "khadash",
+        "translation": "new"
+    },
+    {
+        "hebrew": "חולצה",
+        "transliteration": "khultsa",
+        "translation": "shirt"
+    },
+    {
+        "hebrew": "חושב",
+        "transliteration": "khoshev",
+        "translation": "thinks (m.)"
+    },
+    {
+        "hebrew": "חושבת",
+        "transliteration": "khoshevet",
+        "translation": "thinks (f.)"
+    },
+    {
+        "hebrew": "חלון",
+        "transliteration": "khalon",
+        "translation": "window"
+    },
+    {
+        "hebrew": "חלונות",
+        "transliteration": "khalonot",
+        "translation": "windows"
+    },
+    {
+        "hebrew": "חמים",
+        "transliteration": "khamim",
+        "translation": "hot (of water)"
+    },
+    {
+        "hebrew": "חמישים",
+        "transliteration": "khamishim",
+        "translation": "fifty"
+    },
+    {
+        "hebrew": "חמש",
+        "transliteration": "khamesh",
+        "translation": "five"
+    },
+    {
+        "hebrew": "חריף",
+        "transliteration": "kharif",
+        "translation": "spicy, sharp"
+    },
+    {
+        "hebrew": "חשבתי",
+        "transliteration": "khashavti",
+        "translation": "I thought"
+    },
+    {
+        "hebrew": "חשבתם",
+        "transliteration": "khashavtem",
+        "translation": "you (pl.) thought"
+    },
+    {
+        "hebrew": "חתול",
+        "transliteration": "khatul",
+        "translation": "cat"
+    },
+    {
+        "hebrew": "חתולים",
+        "transliteration": "khatulim",
+        "translation": "cats"
+    },
+    {
+        "hebrew": "טוב",
+        "transliteration": "tov",
+        "translation": "good"
+    },
+    {
+        "hebrew": "טיסה",
+        "transliteration": "tisa",
+        "translation": "flight"
+    },
+    {
+        "hebrew": "טיסות",
+        "transliteration": "tisot",
+        "translation": "flights"
+    },
+    {
+        "hebrew": "טלפון",
+        "transliteration": "telefon",
+        "translation": "phone, telephone"
+    },
+    {
+        "hebrew": "טסה",
+        "transliteration": "tasa",
+        "translation": "she flew"
+    },
+    {
+        "hebrew": "טסו",
+        "transliteration": "tasu",
+        "translation": "they flew"
+    },
+    {
+        "hebrew": "טסים",
+        "transliteration": "tasim",
+        "translation": "fly (m.pl.)"
+    },
+    {
+        "hebrew": "טסת",
+        "transliteration": "tasta",
+        "translation": "you flew"
+    },
+    {
+        "hebrew": "טעים",
+        "transliteration": "ta'im",
+        "translation": "tasty, delicious"
+    },
+    {
+        "hebrew": "יאללה",
+        "transliteration": "yalla",
+        "translation": "let's go, come on"
+    },
+    {
+        "hebrew": "ידעו",
+        "transliteration": "yad'u",
+        "translation": "they knew"
+    },
+    {
+        "hebrew": "יוגה",
+        "transliteration": "yoga",
+        "translation": "yoga"
+    },
+    {
+        "hebrew": "יושב",
+        "transliteration": "yoshev",
+        "translation": "sits (m.)"
+    },
+    {
+        "hebrew": "יושבים",
+        "transliteration": "yoshvim",
+        "translation": "sit (m.pl.)"
+    },
+    {
+        "hebrew": "יותר",
+        "transliteration": "yoter",
+        "translation": "more"
+    },
+    {
+        "hebrew": "יחד",
+        "transliteration": "yakhad",
+        "translation": "together"
+    },
+    {
+        "hebrew": "יכול",
+        "transliteration": "yakhol",
+        "translation": "can, able (m.)"
+    },
+    {
+        "hebrew": "יכולה",
+        "transliteration": "yekhola",
+        "translation": "can, able (f.)"
+    },
+    {
+        "hebrew": "ירקות",
+        "transliteration": "yerakot",
+        "translation": "vegetables"
+    },
+    {
+        "hebrew": "יש",
+        "transliteration": "yesh",
+        "translation": "there is, there are"
+    },
+    {
+        "hebrew": "ישב",
+        "transliteration": "yashav",
+        "translation": "he sat"
+    },
+    {
+        "hebrew": "ישבה",
+        "transliteration": "yashva",
+        "translation": "she sat"
+    },
+    {
+        "hebrew": "ישבת",
+        "transliteration": "yashavta",
+        "translation": "you sat"
+    },
+    {
+        "hebrew": "ישבתי",
+        "transliteration": "yashavti",
+        "translation": "I sat"
+    },
+    {
+        "hebrew": "כבר",
+        "transliteration": "kvar",
+        "translation": "already"
+    },
+    {
+        "hebrew": "כולם",
+        "transliteration": "kulam",
+        "translation": "everyone, all of them"
+    },
+    {
+        "hebrew": "כך",
+        "transliteration": "kakh",
+        "translation": "so, thus"
+    },
+    {
+        "hebrew": "כל",
+        "transliteration": "kol",
+        "translation": "all, every"
+    },
+    {
+        "hebrew": "כלום",
+        "transliteration": "klum",
+        "translation": "nothing"
+    },
+    {
+        "hebrew": "כלל",
+        "transliteration": "klal",
+        "translation": "generally, at all"
+    },
+    {
+        "hebrew": "כמה",
+        "transliteration": "kama",
+        "translation": "how much, how many, some"
+    },
+    {
+        "hebrew": "כמעט",
+        "transliteration": "kim'at",
+        "translation": "almost"
+    },
+    {
+        "hebrew": "כן",
+        "transliteration": "ken",
+        "translation": "yes"
+    },
+    {
+        "hebrew": "כסף",
+        "transliteration": "kesef",
+        "translation": "money"
+    },
+    {
+        "hebrew": "כשזה",
+        "transliteration": "kshe'ze",
+        "translation": "when it, when this"
+    },
+    {
+        "hebrew": "כתב",
+        "transliteration": "katav",
+        "translation": "he wrote"
+    },
+    {
+        "hebrew": "כתבתי",
+        "transliteration": "katavti",
+        "translation": "I wrote"
+    },
+    {
+        "hebrew": "לא",
+        "transliteration": "lo",
+        "translation": "no, not"
+    },
+    {
+        "hebrew": "לאטלנטה",
+        "transliteration": "le'atlanta",
+        "translation": "to Atlanta"
+    },
+    {
+        "hebrew": "לאכול",
+        "transliteration": "le'ekhol",
+        "translation": "to eat"
+    },
+    {
+        "hebrew": "לאן",
+        "transliteration": "le'an",
+        "translation": "to where, where to"
+    },
+    {
+        "hebrew": "לב",
+        "transliteration": "lev",
+        "translation": "heart"
+    },
+    {
+        "hebrew": "לבאלי",
+        "transliteration": "lebali",
+        "translation": "to Bali"
+    },
+    {
+        "hebrew": "לבוא",
+        "transliteration": "lavo",
+        "translation": "to come"
+    },
+    {
+        "hebrew": "לדבר",
+        "transliteration": "ledaber",
+        "translation": "to speak, to talk"
+    },
+    {
+        "hebrew": "לה",
+        "transliteration": "la",
+        "translation": "to her, for her"
+    },
+    {
+        "hebrew": "להיות",
+        "transliteration": "lihyot",
+        "translation": "to be"
+    },
+    {
+        "hebrew": "להם",
+        "transliteration": "lahem",
+        "translation": "to them (m.)"
+    },
+    {
+        "hebrew": "להן",
+        "transliteration": "lahen",
+        "translation": "to them (f.)"
+    },
+    {
+        "hebrew": "לו",
+        "transliteration": "lo",
+        "translation": "to him, for him"
+    },
+    {
+        "hebrew": "לחם",
+        "transliteration": "lekhem",
+        "translation": "bread"
+    },
+    {
+        "hebrew": "לחץ",
+        "transliteration": "lakhats",
+        "translation": "pressure"
+    },
+    {
+        "hebrew": "לטוס",
+        "transliteration": "latus",
+        "translation": "to fly"
+    },
+    {
+        "hebrew": "לי",
+        "transliteration": "li",
+        "translation": "to me, for me"
+    },
+    {
+        "hebrew": "ליד",
+        "transliteration": "leyad",
+        "translation": "next to, near"
+    },
+    {
+        "hebrew": "לים",
+        "transliteration": "layam",
+        "translation": "to the sea, to the beach"
+    },
+    {
+        "hebrew": "לינק",
+        "transliteration": "link",
+        "translation": "link"
+    },
+    {
+        "hebrew": "לירושלים",
+        "transliteration": "lirushalayim",
+        "translation": "to Jerusalem"
+    },
+    {
+        "hebrew": "לך",
+        "transliteration": "lekha",
+        "translation": "to you, for you (m.)"
+    },
+    {
+        "hebrew": "לכם",
+        "transliteration": "lakhem",
+        "translation": "to you, for you (m.pl.)"
+    },
+    {
+        "hebrew": "לכן",
+        "transliteration": "lakhen",
+        "translation": "therefore"
+    },
+    {
+        "hebrew": "למד",
+        "transliteration": "lamad",
+        "translation": "he learned, he studied"
+    },
+    {
+        "hebrew": "למדה",
+        "transliteration": "lamda",
+        "translation": "she learned, she studied"
+    },
+    {
+        "hebrew": "למדו",
+        "transliteration": "lamdu",
+        "translation": "they learned, they studied"
+    },
+    {
+        "hebrew": "למה",
+        "transliteration": "lama",
+        "translation": "why"
+    },
+    {
+        "hebrew": "למסיבה",
+        "transliteration": "lamesiba",
+        "translation": "to the party"
+    },
+    {
+        "hebrew": "לנו",
+        "transliteration": "lanu",
+        "translation": "to us, for us"
+    },
+    {
+        "hebrew": "לנסוע",
+        "transliteration": "linso'a",
+        "translation": "to travel, to drive"
+    },
+    {
+        "hebrew": "לסגור",
+        "transliteration": "lisgor",
+        "translation": "to close"
+    },
+    {
+        "hebrew": "לספרד",
+        "transliteration": "lesfarad",
+        "translation": "to Spain"
+    },
+    {
+        "hebrew": "לעשות",
+        "transliteration": "la'asot",
+        "translation": "to do, to make"
+    },
+    {
+        "hebrew": "לפגוש",
+        "transliteration": "lifgosh",
+        "translation": "to meet"
+    },
+    {
+        "hebrew": "לפעמים",
+        "transliteration": "lif'amim",
+        "translation": "sometimes"
+    },
+    {
+        "hebrew": "לפתוח",
+        "transliteration": "liftoakh",
+        "translation": "to open"
+    },
+    {
+        "hebrew": "לצרפת",
+        "transliteration": "letsarfat",
+        "translation": "to France"
+    },
+    {
+        "hebrew": "לקנות",
+        "transliteration": "liknot",
+        "translation": "to buy"
+    },
+    {
+        "hebrew": "לראות",
+        "transliteration": "lir'ot",
+        "translation": "to see"
+    },
+    {
+        "hebrew": "לשאול",
+        "transliteration": "lish'ol",
+        "translation": "to ask"
+    },
+    {
+        "hebrew": "לשבת",
+        "transliteration": "lashevet",
+        "translation": "to sit"
+    },
+    {
+        "hebrew": "לשים",
+        "transliteration": "lasim",
+        "translation": "to put, to place"
+    },
+    {
+        "hebrew": "לשיעור",
+        "transliteration": "lashiur",
+        "translation": "to the lesson"
+    },
+    {
+        "hebrew": "לשלוח",
+        "transliteration": "lishloakh",
+        "translation": "to send"
+    },
+    {
+        "hebrew": "לתל",
+        "transliteration": "letel",
+        "translation": "to Tel"
+    },
+    {
+        "hebrew": "מאה",
+        "transliteration": "me'a",
+        "translation": "hundred"
+    },
+    {
+        "hebrew": "מדבר",
+        "transliteration": "medaber",
+        "translation": "speaks, talks (m.)"
+    },
+    {
+        "hebrew": "מדברים",
+        "transliteration": "medabrim",
+        "translation": "speak, talk (m.pl.)"
+    },
+    {
+        "hebrew": "מדברת",
+        "transliteration": "medaberet",
+        "translation": "speaks, talks (f.)"
+    },
+    {
+        "hebrew": "מדונה",
+        "transliteration": "madonna",
+        "translation": "Madonna"
+    },
+    {
+        "hebrew": "מדי",
+        "transliteration": "midai",
+        "translation": "too (much)"
+    },
+    {
+        "hebrew": "מה",
+        "transliteration": "ma",
+        "translation": "what"
+    },
+    {
+        "hebrew": "מהמם",
+        "transliteration": "mehamem",
+        "translation": "amazing (m.)"
+    },
+    {
+        "hebrew": "מהממת",
+        "transliteration": "mehamemet",
+        "translation": "amazing (f.)"
+    },
+    {
+        "hebrew": "מוכנה",
+        "transliteration": "mukhana",
+        "translation": "ready (f.)"
+    },
+    {
+        "hebrew": "מושלם",
+        "transliteration": "mushlam",
+        "translation": "perfect (m.)"
+    },
+    {
+        "hebrew": "מושלמת",
+        "transliteration": "mushlemet",
+        "translation": "perfect (f.)"
+    },
+    {
+        "hebrew": "מזג",
+        "transliteration": "mezeg",
+        "translation": "weather (as in mezeg avir)"
+    },
+    {
+        "hebrew": "מחר",
+        "transliteration": "makhar",
+        "translation": "tomorrow"
+    },
+    {
+        "hebrew": "מחשב",
+        "transliteration": "makhshev",
+        "translation": "computer"
+    },
+    {
+        "hebrew": "מטבח",
+        "transliteration": "mitbakh",
+        "translation": "kitchen"
+    },
+    {
+        "hebrew": "מי",
+        "transliteration": "mi",
+        "translation": "who"
+    },
+    {
+        "hebrew": "מייל",
+        "transliteration": "meyl",
+        "translation": "email, mail"
+    },
+    {
+        "hebrew": "מילה",
+        "transliteration": "mila",
+        "translation": "word"
+    },
+    {
+        "hebrew": "מילים",
+        "transliteration": "milim",
+        "translation": "words"
+    },
+    {
+        "hebrew": "מים",
+        "transliteration": "mayim",
+        "translation": "water"
+    },
+    {
+        "hebrew": "מיץ",
+        "transliteration": "mits",
+        "translation": "juice"
+    },
+    {
+        "hebrew": "מכירה",
+        "transliteration": "makira",
+        "translation": "knows, recognizes (f.)"
+    },
+    {
+        "hebrew": "מכירים",
+        "transliteration": "makirim",
+        "translation": "know, recognize (pl.)"
+    },
+    {
+        "hebrew": "מסובך",
+        "transliteration": "mesuvakh",
+        "translation": "complicated"
+    },
+    {
+        "hebrew": "מסיבה",
+        "transliteration": "mesiba",
+        "translation": "party"
+    },
+    {
+        "hebrew": "מסיבות",
+        "transliteration": "mesibot",
+        "translation": "parties"
+    },
+    {
+        "hebrew": "מסעדה",
+        "transliteration": "mis'ada",
+        "translation": "restaurant"
+    },
+    {
+        "hebrew": "מספרים",
+        "transliteration": "misparim",
+        "translation": "numbers; tell (m.pl.)"
+    },
+    {
+        "hebrew": "מעט",
+        "transliteration": "me'at",
+        "translation": "a little, few"
+    },
+    {
+        "hebrew": "מקרר",
+        "transliteration": "mekarer",
+        "translation": "fridge, refrigerator"
+    },
+    {
+        "hebrew": "משהו",
+        "transliteration": "mashehu",
+        "translation": "something"
+    },
+    {
+        "hebrew": "משנה",
+        "transliteration": "meshane",
+        "translation": "matters, changes"
+    },
+    {
+        "hebrew": "משפחה",
+        "transliteration": "mishpakha",
+        "translation": "family"
+    },
+    {
+        "hebrew": "מתוק",
+        "transliteration": "matok",
+        "translation": "sweet"
+    },
+    {
+        "hebrew": "מתחיל",
+        "transliteration": "matkhil",
+        "translation": "begins, starts (m.)"
+    },
+    {
+        "hebrew": "מתחילה",
+        "transliteration": "matkhila",
+        "translation": "begins, starts (f.)"
+    },
+    {
+        "hebrew": "מתי",
+        "transliteration": "matai",
+        "translation": "when"
+    },
+    {
+        "hebrew": "מתנה",
+        "transliteration": "matana",
+        "translation": "gift, present"
+    },
+    {
+        "hebrew": "נוסעת",
+        "transliteration": "nosa'at",
+        "translation": "travels (f.)"
+    },
+    {
+        "hebrew": "נסעתי",
+        "transliteration": "nasa'ti",
+        "translation": "I traveled"
+    },
+    {
+        "hebrew": "סגור",
+        "transliteration": "sagur",
+        "translation": "closed"
+    },
+    {
+        "hebrew": "סגרנו",
+        "transliteration": "sagarnu",
+        "translation": "we closed"
+    },
+    {
+        "hebrew": "סגרת",
+        "transliteration": "sagarta",
+        "translation": "you closed"
+    },
+    {
+        "hebrew": "סוגר",
+        "transliteration": "soger",
+        "translation": "closes (m.)"
+    },
+    {
+        "hebrew": "סושי",
+        "transliteration": "sushi",
+        "translation": "sushi"
+    },
+    {
+        "hebrew": "סלון",
+        "transliteration": "salon",
+        "translation": "living room"
+    },
+    {
+        "hebrew": "ספה",
+        "transliteration": "sapa",
+        "translation": "couch, sofa"
+    },
+    {
+        "hebrew": "ספורט",
+        "transliteration": "sport",
+        "translation": "sport"
+    },
+    {
+        "hebrew": "ספות",
+        "transliteration": "sapot",
+        "translation": "couches, sofas"
+    },
+    {
+        "hebrew": "ספרד",
+        "transliteration": "sfarad",
+        "translation": "Spain"
+    },
+    {
+        "hebrew": "סקי",
+        "transliteration": "ski",
+        "translation": "ski"
+    },
+    {
+        "hebrew": "עבד",
+        "transliteration": "avad",
+        "translation": "he worked"
+    },
+    {
+        "hebrew": "עבדת",
+        "transliteration": "avadta",
+        "translation": "you worked"
+    },
+    {
+        "hebrew": "עבדתי",
+        "transliteration": "avadti",
+        "translation": "I worked"
+    },
+    {
+        "hebrew": "עברית",
+        "transliteration": "ivrit",
+        "translation": "Hebrew (language)"
+    },
+    {
+        "hebrew": "עדיין",
+        "transliteration": "adain",
+        "translation": "still"
+    },
+    {
+        "hebrew": "עובד",
+        "transliteration": "oved",
+        "translation": "works (m.)"
+    },
+    {
+        "hebrew": "עובדים",
+        "transliteration": "ovdim",
+        "translation": "work (m.pl.)"
+    },
+    {
+        "hebrew": "עוד",
+        "transliteration": "od",
+        "translation": "more, still, another"
+    },
+    {
+        "hebrew": "עושה",
+        "transliteration": "ose",
+        "translation": "does, makes"
+    },
+    {
+        "hebrew": "עייף",
+        "transliteration": "ayef",
+        "translation": "tired (m.)"
+    },
+    {
+        "hebrew": "עכשיו",
+        "transliteration": "akhshav",
+        "translation": "now"
+    },
+    {
+        "hebrew": "על",
+        "transliteration": "al",
+        "translation": "on, about"
+    },
+    {
+        "hebrew": "עם",
+        "transliteration": "im",
+        "translation": "with"
+    },
+    {
+        "hebrew": "עסוק",
+        "transliteration": "asuk",
+        "translation": "busy"
+    },
+    {
+        "hebrew": "ערב",
+        "transliteration": "erev",
+        "translation": "evening"
+    },
+    {
+        "hebrew": "עשית",
+        "transliteration": "asita",
+        "translation": "you did"
+    },
+    {
+        "hebrew": "עשיתי",
+        "transliteration": "asiti",
+        "translation": "I did"
+    },
+    {
+        "hebrew": "עשרה",
+        "transliteration": "esre",
+        "translation": "ten (in compound numbers)"
+    },
+    {
+        "hebrew": "עשרים",
+        "transliteration": "esrim",
+        "translation": "twenty"
+    },
+    {
+        "hebrew": "פגישה",
+        "transliteration": "pgisha",
+        "translation": "meeting"
+    },
+    {
+        "hebrew": "פגש",
+        "transliteration": "pagash",
+        "translation": "he met"
+    },
+    {
+        "hebrew": "פגשת",
+        "transliteration": "pagashta",
+        "translation": "you met"
+    },
+    {
+        "hebrew": "פגשתי",
+        "transliteration": "pagashti",
+        "translation": "I met"
+    },
+    {
+        "hebrew": "פותח",
+        "transliteration": "pote'akh",
+        "translation": "opens (m.)"
+    },
+    {
+        "hebrew": "פיט",
+        "transliteration": "pit",
+        "translation": "Pitt"
+    },
+    {
+        "hebrew": "פירות",
+        "transliteration": "perot",
+        "translation": "fruits"
+    },
+    {
+        "hebrew": "פלאפל",
+        "transliteration": "falafel",
+        "translation": "falafel"
+    },
+    {
+        "hebrew": "פעם",
+        "transliteration": "pa'am",
+        "translation": "time, once"
+    },
+    {
+        "hebrew": "פעמיים",
+        "transliteration": "pa'amayim",
+        "translation": "twice"
+    },
+    {
+        "hebrew": "פעמים",
+        "transliteration": "pe'amim",
+        "translation": "times"
+    },
+    {
+        "hebrew": "פתוח",
+        "transliteration": "patu'akh",
+        "translation": "open (adj., m.)"
+    },
+    {
+        "hebrew": "פתוחה",
+        "transliteration": "ptukha",
+        "translation": "open (adj., f.)"
+    },
+    {
+        "hebrew": "פתחת",
+        "transliteration": "patakhta",
+        "translation": "you opened"
+    },
+    {
+        "hebrew": "צוהריים",
+        "transliteration": "tsohorayim",
+        "translation": "noon, midday"
+    },
+    {
+        "hebrew": "צריכה",
+        "transliteration": "tsrikha",
+        "translation": "needs (f.)"
+    },
+    {
+        "hebrew": "צרפת",
+        "transliteration": "tsarfat",
+        "translation": "France"
+    },
+    {
+        "hebrew": "קונה",
+        "transliteration": "kone",
+        "translation": "buys"
+    },
+    {
+        "hebrew": "קטן",
+        "transliteration": "katan",
+        "translation": "small"
+    },
+    {
+        "hebrew": "קינוח",
+        "transliteration": "kinuakh",
+        "translation": "dessert"
+    },
+    {
+        "hebrew": "קל",
+        "transliteration": "kal",
+        "translation": "easy"
+    },
+    {
+        "hebrew": "קנית",
+        "transliteration": "kanita",
+        "translation": "you bought"
+    },
+    {
+        "hebrew": "קפה",
+        "transliteration": "kafe",
+        "translation": "coffee"
+    },
+    {
+        "hebrew": "קרה",
+        "transliteration": "kara",
+        "translation": "happened; cold (f.)"
+    },
+    {
+        "hebrew": "קרים",
+        "transliteration": "karim",
+        "translation": "cold (pl.)"
+    },
+    {
+        "hebrew": "קשה",
+        "transliteration": "kashe",
+        "translation": "hard, difficult"
+    },
+    {
+        "hebrew": "ראית",
+        "transliteration": "ra'ita",
+        "translation": "you saw"
+    },
+    {
+        "hebrew": "ראיתי",
+        "transliteration": "ra'iti",
+        "translation": "I saw"
+    },
+    {
+        "hebrew": "ראשון",
+        "transliteration": "rishon",
+        "translation": "first"
+    },
+    {
+        "hebrew": "רבים",
+        "transliteration": "rabim",
+        "translation": "many, numerous"
+    },
+    {
+        "hebrew": "רגע",
+        "transliteration": "rega",
+        "translation": "moment, just a moment"
+    },
+    {
+        "hebrew": "רואה",
+        "transliteration": "ro'e",
+        "translation": "sees"
+    },
+    {
+        "hebrew": "רומיאו",
+        "transliteration": "romeo",
+        "translation": "Romeo"
+    },
+    {
+        "hebrew": "רוצה",
+        "transliteration": "rotse",
+        "translation": "wants"
+    },
+    {
+        "hebrew": "רעב",
+        "transliteration": "ra'ev",
+        "translation": "hungry (m.)"
+    },
+    {
+        "hebrew": "רעבה",
+        "transliteration": "re'eva",
+        "translation": "hungry (f.)"
+    },
+    {
+        "hebrew": "רצה",
+        "transliteration": "ratsa",
+        "translation": "he wanted"
+    },
+    {
+        "hebrew": "רצינו",
+        "transliteration": "ratsinu",
+        "translation": "we wanted"
+    },
+    {
+        "hebrew": "רציתי",
+        "transliteration": "ratsiti",
+        "translation": "I wanted"
+    },
+    {
+        "hebrew": "רק",
+        "transliteration": "rak",
+        "translation": "only, just"
+    },
+    {
+        "hebrew": "שאל",
+        "transliteration": "sha'al",
+        "translation": "he asked"
+    },
+    {
+        "hebrew": "שאלה",
+        "transliteration": "she'ela",
+        "translation": "question; she asked"
+    },
+    {
+        "hebrew": "שאלתי",
+        "transliteration": "sha'alti",
+        "translation": "I asked"
+    },
+    {
+        "hebrew": "שבע",
+        "transliteration": "sheva",
+        "translation": "seven"
+    },
+    {
+        "hebrew": "שבעים",
+        "transliteration": "shiv'im",
+        "translation": "seventy"
+    },
+    {
+        "hebrew": "שהדלת",
+        "transliteration": "shehadelet",
+        "translation": "that the door"
+    },
+    {
+        "hebrew": "שהחלון",
+        "transliteration": "shehakhalon",
+        "translation": "that the window"
+    },
+    {
+        "hebrew": "שואל",
+        "transliteration": "sho'el",
+        "translation": "asks (m.)"
+    },
+    {
+        "hebrew": "שואלת",
+        "transliteration": "sho'elet",
+        "translation": "asks (f.)"
+    },
+    {
+        "hebrew": "שולח",
+        "transliteration": "shole'akh",
+        "translation": "sends (m.)"
+    },
+    {
+        "hebrew": "שולחן",
+        "transliteration": "shulkhan",
+        "translation": "table"
+    },
+    {
+        "hebrew": "שולחנות",
+        "transliteration": "shulkhanot",
+        "translation": "tables"
+    },
+    {
+        "hebrew": "שום",
+        "transliteration": "shum",
+        "translation": "no, none (as in shum davar)"
+    },
+    {
+        "hebrew": "שון",
+        "transliteration": "shon",
+        "translation": "Sean (name)"
+    },
+    {
+        "hebrew": "שופינג",
+        "transliteration": "shoping",
+        "translation": "shopping"
+    },
+    {
+        "hebrew": "שותה",
+        "transliteration": "shote",
+        "translation": "drinks"
+    },
+    {
+        "hebrew": "שילה",
+        "transliteration": "shila",
+        "translation": "Shila (name)"
+    },
+    {
+        "hebrew": "שימו",
+        "transliteration": "simu",
+        "translation": "put! (imperative), pay attention"
+    },
+    {
+        "hebrew": "שיר",
+        "transliteration": "shir",
+        "translation": "song"
+    },
+    {
+        "hebrew": "שישים",
+        "transliteration": "shishim",
+        "translation": "sixty"
+    },
+    {
+        "hebrew": "שכן",
+        "transliteration": "shakhen",
+        "translation": "neighbor"
+    },
+    {
+        "hebrew": "של",
+        "transliteration": "shel",
+        "translation": "of, belonging to"
+    },
+    {
+        "hebrew": "שלא",
+        "transliteration": "shelo",
+        "translation": "that not"
+    },
+    {
+        "hebrew": "שלה",
+        "transliteration": "shela",
+        "translation": "hers, her"
+    },
+    {
+        "hebrew": "שלוש",
+        "transliteration": "shalosh",
+        "translation": "three"
+    },
+    {
+        "hebrew": "שלושים",
+        "transliteration": "shloshim",
+        "translation": "thirty"
+    },
+    {
+        "hebrew": "שלחת",
+        "transliteration": "shalakhta",
+        "translation": "you sent"
+    },
+    {
+        "hebrew": "שלחתי",
+        "transliteration": "shalakhti",
+        "translation": "I sent"
+    },
+    {
+        "hebrew": "שלי",
+        "transliteration": "sheli",
+        "translation": "my, mine"
+    },
+    {
+        "hebrew": "שלך",
+        "transliteration": "shelkha",
+        "translation": "your, yours"
+    },
+    {
+        "hebrew": "שלנו",
+        "transliteration": "shelanu",
+        "translation": "our, ours"
+    },
+    {
+        "hebrew": "שם",
+        "transliteration": "sham",
+        "translation": "there; name"
+    },
+    {
+        "hebrew": "שמונה",
+        "transliteration": "shmone",
+        "translation": "eight"
+    },
+    {
+        "hebrew": "שמונים",
+        "transliteration": "shmonim",
+        "translation": "eighty"
+    },
+    {
+        "hebrew": "שמלה",
+        "transliteration": "simla",
+        "translation": "dress"
+    },
+    {
+        "hebrew": "שמת",
+        "transliteration": "samta",
+        "translation": "you put, you placed"
+    },
+    {
+        "hebrew": "שמתי",
+        "transliteration": "samti",
+        "translation": "I put, I placed"
+    },
+    {
+        "hebrew": "שש",
+        "transliteration": "shesh",
+        "translation": "six"
+    },
+    {
+        "hebrew": "שתה",
+        "transliteration": "shata",
+        "translation": "he drank"
+    },
+    {
+        "hebrew": "שתים",
+        "transliteration": "shtayim",
+        "translation": "two (f.)"
+    },
+    {
+        "hebrew": "תאי",
+        "transliteration": "tai",
+        "translation": "Tai (name)"
+    },
+    {
+        "hebrew": "תל",
+        "transliteration": "tel",
+        "translation": "Tel (hill)"
+    },
+    {
+        "hebrew": "תמיד",
+        "transliteration": "tamid",
+        "translation": "always"
+    },
+    {
+        "hebrew": "תפוז",
+        "transliteration": "tapuz",
+        "translation": "orange (fruit)"
+    },
+    {
+        "hebrew": "תפוזים",
+        "transliteration": "tapuzim",
+        "translation": "oranges"
+    },
+    {
+        "hebrew": "תפוח",
+        "transliteration": "tapuakh",
+        "translation": "apple"
+    },
+    {
+        "hebrew": "תפוחים",
+        "transliteration": "tapukhim",
+        "translation": "apples"
+    },
+    {
+        "hebrew": "תשע",
+        "transliteration": "tesha",
+        "translation": "nine"
+    },
+    {
+        "hebrew": "תשעים",
+        "transliteration": "tish'im",
+        "translation": "ninety"
+    }
+]

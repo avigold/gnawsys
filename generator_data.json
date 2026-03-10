@@ -1,0 +1,2378 @@
+{
+  "subjects": [
+    {
+      "he": "אני",
+      "tr": "ani",
+      "en": "I",
+      "pk": "ms",
+      "ppk": "1s",
+      "is3sg": false,
+      "g": "m"
+    },
+    {
+      "he": "אני",
+      "tr": "ani",
+      "en": "I",
+      "pk": "fs",
+      "ppk": "1s",
+      "is3sg": false,
+      "g": "f"
+    },
+    {
+      "he": "אתה",
+      "tr": "ata",
+      "en": "you",
+      "pk": "ms",
+      "ppk": "2s",
+      "is3sg": false,
+      "g": "m"
+    },
+    {
+      "he": "את",
+      "tr": "at",
+      "en": "you",
+      "pk": "fs",
+      "ppk": "2s",
+      "is3sg": false,
+      "g": "f"
+    },
+    {
+      "he": "הוא",
+      "tr": "hu",
+      "en": "he",
+      "pk": "ms",
+      "ppk": "3ms",
+      "is3sg": true,
+      "g": "m"
+    },
+    {
+      "he": "היא",
+      "tr": "hi",
+      "en": "she",
+      "pk": "fs",
+      "ppk": "3fs",
+      "is3sg": true,
+      "g": "f"
+    },
+    {
+      "he": "אנחנו",
+      "tr": "anakhnu",
+      "en": "we",
+      "pk": "mp",
+      "ppk": "1p",
+      "is3sg": false,
+      "g": "m"
+    },
+    {
+      "he": "אתם",
+      "tr": "atem",
+      "en": "you (pl.)",
+      "pk": "mp",
+      "ppk": "2p",
+      "is3sg": false,
+      "g": "m"
+    },
+    {
+      "he": "הם",
+      "tr": "hem",
+      "en": "they",
+      "pk": "mp",
+      "ppk": "3p",
+      "is3sg": false,
+      "g": "m"
+    }
+  ],
+  "verbs": [
+    {
+      "pres": {
+        "ms": [
+          "אוכל",
+          "okhel"
+        ],
+        "fs": [
+          "אוכלת",
+          "okhelet"
+        ],
+        "mp": [
+          "אוכלים",
+          "okhlim"
+        ]
+      },
+      "past": {
+        "1s": [
+          "אכלתי",
+          "akhalti"
+        ],
+        "2s": [
+          "אכלת",
+          "akhalta"
+        ],
+        "3fs": [
+          "אכלה",
+          "akhla"
+        ],
+        "1p": [
+          "אכלנו",
+          "akhalnu"
+        ],
+        "3p": [
+          "אכלו",
+          "akhlu"
+        ],
+        "3ms": [
+          "אכל",
+          "akhal"
+        ]
+      },
+      "inf": [
+        "לאכול",
+        "le'ekhol"
+      ],
+      "en": [
+        "eat",
+        "eats",
+        "ate",
+        "to eat",
+        "eating"
+      ],
+      "comp": "food"
+    },
+    {
+      "pres": {
+        "ms": [
+          "שותה",
+          "shote"
+        ],
+        "fs": [
+          "שותה",
+          "shote"
+        ],
+        "mp": [
+          "שותים",
+          "shotim"
+        ]
+      },
+      "past": {
+        "3ms": [
+          "שתה",
+          "shata"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "drink",
+        "drinks",
+        "drank",
+        "to drink",
+        "drinking"
+      ],
+      "comp": "drink"
+    },
+    {
+      "pres": {
+        "ms": [
+          "עושה",
+          "ose"
+        ],
+        "fs": [
+          "עושה",
+          "ose"
+        ]
+      },
+      "past": {
+        "1s": [
+          "עשיתי",
+          "asiti"
+        ],
+        "2s": [
+          "עשית",
+          "asita"
+        ]
+      },
+      "inf": [
+        "לעשות",
+        "la'asot"
+      ],
+      "en": [
+        "do",
+        "does",
+        "did",
+        "to do",
+        "doing"
+      ],
+      "comp": "activity"
+    },
+    {
+      "pres": {
+        "ms": [
+          "מדבר",
+          "medaber"
+        ],
+        "fs": [
+          "מדברת",
+          "medaberet"
+        ],
+        "mp": [
+          "מדברים",
+          "medabrim"
+        ]
+      },
+      "past": {},
+      "inf": [
+        "לדבר",
+        "ledaber"
+      ],
+      "en": [
+        "talk",
+        "talks",
+        "talked",
+        "to talk",
+        "talking"
+      ],
+      "comp": "about"
+    },
+    {
+      "pres": {
+        "ms": [
+          "עובד",
+          "oved"
+        ],
+        "mp": [
+          "עובדים",
+          "ovdim"
+        ],
+        "fs": [
+          "עובדת",
+          "ovedet"
+        ]
+      },
+      "past": {
+        "1s": [
+          "עבדתי",
+          "avadti"
+        ],
+        "2s": [
+          "עבדת",
+          "avadta"
+        ],
+        "3ms": [
+          "עבד",
+          "avad"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "work",
+        "works",
+        "worked",
+        "to work",
+        "working"
+      ],
+      "comp": "time_or_loc"
+    },
+    {
+      "pres": {
+        "ms": [
+          "יושב",
+          "yoshev"
+        ],
+        "mp": [
+          "יושבים",
+          "yoshvim"
+        ],
+        "fs": [
+          "יושבת",
+          "yoshevet"
+        ]
+      },
+      "past": {
+        "1s": [
+          "ישבתי",
+          "yashavti"
+        ],
+        "2s": [
+          "ישבת",
+          "yashavta"
+        ],
+        "3ms": [
+          "ישב",
+          "yashav"
+        ],
+        "3fs": [
+          "ישבה",
+          "yashva"
+        ]
+      },
+      "inf": [
+        "לשבת",
+        "lashevet"
+      ],
+      "en": [
+        "sit",
+        "sits",
+        "sat",
+        "to sit",
+        "sitting"
+      ],
+      "comp": "location"
+    },
+    {
+      "pres": {
+        "ms": [
+          "סוגר",
+          "soger"
+        ],
+        "fs": [
+          "סוגרת",
+          "sogeret"
+        ]
+      },
+      "past": {
+        "1p": [
+          "סגרנו",
+          "sagarnu"
+        ],
+        "2s": [
+          "סגרת",
+          "sagarta"
+        ]
+      },
+      "inf": [
+        "לסגור",
+        "lisgor"
+      ],
+      "en": [
+        "close",
+        "closes",
+        "closed",
+        "to close",
+        "closing"
+      ],
+      "comp": "openable"
+    },
+    {
+      "pres": {
+        "ms": [
+          "פותח",
+          "pote'akh"
+        ],
+        "fs": [
+          "פותחת",
+          "potakhat"
+        ]
+      },
+      "past": {
+        "2s": [
+          "פתחת",
+          "patakhta"
+        ]
+      },
+      "inf": [
+        "לפתוח",
+        "liftoakh"
+      ],
+      "en": [
+        "open",
+        "opens",
+        "opened",
+        "to open",
+        "opening"
+      ],
+      "comp": "openable"
+    },
+    {
+      "pres": {
+        "ms": [
+          "שולח",
+          "shole'akh"
+        ],
+        "fs": [
+          "שולחת",
+          "sholakhat"
+        ]
+      },
+      "past": {
+        "1s": [
+          "שלחתי",
+          "shalakhti"
+        ],
+        "2s": [
+          "שלחת",
+          "shalakhta"
+        ]
+      },
+      "inf": [
+        "לשלוח",
+        "lishloakh"
+      ],
+      "en": [
+        "send",
+        "sends",
+        "sent",
+        "to send",
+        "sending"
+      ],
+      "comp": "sendable"
+    },
+    {
+      "pres": {},
+      "past": {
+        "1s": [
+          "פגשתי",
+          "pagashti"
+        ],
+        "2s": [
+          "פגשת",
+          "pagashta"
+        ],
+        "3ms": [
+          "פגש",
+          "pagash"
+        ]
+      },
+      "inf": [
+        "לפגוש",
+        "lifgosh"
+      ],
+      "en": [
+        "meet",
+        "meets",
+        "met",
+        "to meet",
+        "meeting"
+      ],
+      "comp": "person"
+    },
+    {
+      "pres": {},
+      "past": {
+        "1s": [
+          "אמרתי",
+          "amarti"
+        ],
+        "2s": [
+          "אמרת",
+          "amarta"
+        ],
+        "3ms": [
+          "אמר",
+          "amar"
+        ],
+        "3fs": [
+          "אמרה",
+          "amra"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "say",
+        "says",
+        "said",
+        "to say",
+        "saying"
+      ],
+      "comp": "quote"
+    },
+    {
+      "pres": {
+        "ms": [
+          "חושב",
+          "khoshev"
+        ],
+        "fs": [
+          "חושבת",
+          "khoshevet"
+        ]
+      },
+      "past": {
+        "1s": [
+          "חשבתי",
+          "khashavti"
+        ],
+        "2p": [
+          "חשבתם",
+          "khashavtem"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "think",
+        "thinks",
+        "thought",
+        "to think",
+        "thinking"
+      ],
+      "comp": "about_it"
+    },
+    {
+      "pres": {
+        "ms": [
+          "שואל",
+          "sho'el"
+        ],
+        "fs": [
+          "שואלת",
+          "sho'elet"
+        ],
+        "mp": [
+          "שואלים",
+          "sho'alim"
+        ]
+      },
+      "past": {
+        "1s": [
+          "שאלתי",
+          "sha'alti"
+        ],
+        "3ms": [
+          "שאל",
+          "sha'al"
+        ]
+      },
+      "inf": [
+        "לשאול",
+        "lish'ol"
+      ],
+      "en": [
+        "ask",
+        "asks",
+        "asked",
+        "to ask",
+        "asking"
+      ],
+      "comp": "person"
+    },
+    {
+      "pres": {
+        "ms": [
+          "גר",
+          "gar"
+        ],
+        "fs": [
+          "גרה",
+          "gara"
+        ]
+      },
+      "past": {
+        "2s": [
+          "גרת",
+          "garta"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "live",
+        "lives",
+        "lived",
+        "to live",
+        "living"
+      ],
+      "comp": "country"
+    },
+    {
+      "pres": {
+        "mp": [
+          "טסים",
+          "tasim"
+        ]
+      },
+      "past": {
+        "2s": [
+          "טסת",
+          "tasta"
+        ],
+        "3fs": [
+          "טסה",
+          "tasa"
+        ],
+        "3p": [
+          "טסו",
+          "tasu"
+        ]
+      },
+      "inf": [
+        "לטוס",
+        "latus"
+      ],
+      "en": [
+        "fly",
+        "flies",
+        "flew",
+        "to fly",
+        "flying"
+      ],
+      "comp": "destination"
+    },
+    {
+      "pres": {
+        "mp": [
+          "הולכים",
+          "holkhim"
+        ]
+      },
+      "past": {
+        "3ms": [
+          "הלך",
+          "halakh"
+        ],
+        "3fs": [
+          "הלכה",
+          "halkha"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "go",
+        "goes",
+        "went",
+        "to go",
+        "going"
+      ],
+      "comp": "destination"
+    },
+    {
+      "pres": {
+        "ms": [
+          "בא",
+          "ba"
+        ],
+        "fs": [
+          "באה",
+          "ba'a"
+        ]
+      },
+      "past": {
+        "2s": [
+          "באת",
+          "bata"
+        ]
+      },
+      "inf": [
+        "לבוא",
+        "lavo"
+      ],
+      "en": [
+        "come",
+        "comes",
+        "came",
+        "to come",
+        "coming"
+      ],
+      "comp": "destination"
+    },
+    {
+      "pres": {
+        "ms": [
+          "קונה",
+          "kone"
+        ],
+        "fs": [
+          "קונה",
+          "kone"
+        ],
+        "mp": [
+          "קונים",
+          "konim"
+        ]
+      },
+      "past": {
+        "2s": [
+          "קנית",
+          "kanita"
+        ]
+      },
+      "inf": [
+        "לקנות",
+        "liknot"
+      ],
+      "en": [
+        "buy",
+        "buys",
+        "bought",
+        "to buy",
+        "buying"
+      ],
+      "comp": "buyable"
+    },
+    {
+      "pres": {
+        "fs": [
+          "נוסעת",
+          "nosa'at"
+        ]
+      },
+      "past": {
+        "1s": [
+          "נסעתי",
+          "nasa'ti"
+        ]
+      },
+      "inf": [
+        "לנסוע",
+        "linso'a"
+      ],
+      "en": [
+        "travel",
+        "travels",
+        "traveled",
+        "to travel",
+        "traveling"
+      ],
+      "comp": "destination"
+    },
+    {
+      "pres": {
+        "ms": [
+          "רואה",
+          "ro'e"
+        ],
+        "fs": [
+          "רואה",
+          "ro'e"
+        ]
+      },
+      "past": {
+        "1s": [
+          "ראיתי",
+          "ra'iti"
+        ],
+        "2s": [
+          "ראית",
+          "ra'ita"
+        ]
+      },
+      "inf": [
+        "לראות",
+        "lir'ot"
+      ],
+      "en": [
+        "see",
+        "sees",
+        "saw",
+        "to see",
+        "seeing"
+      ],
+      "comp": "seeable"
+    },
+    {
+      "pres": {},
+      "past": {
+        "1s": [
+          "שמתי",
+          "samti"
+        ],
+        "2s": [
+          "שמת",
+          "samta"
+        ]
+      },
+      "inf": [
+        "לשים",
+        "lasim"
+      ],
+      "en": [
+        "put",
+        "puts",
+        "put",
+        "to put",
+        "putting"
+      ],
+      "comp": "puttable"
+    },
+    {
+      "pres": {},
+      "past": {
+        "1s": [
+          "כתבתי",
+          "katavti"
+        ],
+        "3ms": [
+          "כתב",
+          "katav"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "write",
+        "writes",
+        "wrote",
+        "to write",
+        "writing"
+      ],
+      "comp": "writable"
+    },
+    {
+      "pres": {
+        "fs": [
+          "מכירה",
+          "makira"
+        ],
+        "mp": [
+          "מכירים",
+          "makirim"
+        ]
+      },
+      "past": {
+        "3p": [
+          "ידעו",
+          "yad'u"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "know",
+        "knows",
+        "knew",
+        "to know",
+        "knowing"
+      ],
+      "comp": "person_obj"
+    },
+    {
+      "pres": {
+        "ms": [
+          "רוצה",
+          "rotse"
+        ],
+        "fs": [
+          "רוצה",
+          "rotse"
+        ],
+        "mp": [
+          "רוצים",
+          "rotsim"
+        ]
+      },
+      "past": {
+        "3ms": [
+          "רצה",
+          "ratsa"
+        ],
+        "1p": [
+          "רצינו",
+          "ratsinu"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "want",
+        "wants",
+        "wanted",
+        "to want",
+        "wanting"
+      ],
+      "comp": "activity"
+    },
+    {
+      "pres": {
+        "ms": [
+          "צריך",
+          "tsarikh"
+        ],
+        "fs": [
+          "צריכה",
+          "tsrikha"
+        ]
+      },
+      "past": {},
+      "inf": null,
+      "en": [
+        "need",
+        "needs",
+        "needed",
+        "to need",
+        "needing"
+      ],
+      "comp": "activity"
+    },
+    {
+      "pres": {
+        "ms": [
+          "מתחיל",
+          "matkhil"
+        ],
+        "fs": [
+          "מתחילה",
+          "matkhila"
+        ]
+      },
+      "past": {},
+      "inf": null,
+      "en": [
+        "start",
+        "starts",
+        "started",
+        "to start",
+        "starting"
+      ],
+      "comp": "activity"
+    },
+    {
+      "pres": {},
+      "past": {
+        "1s": [
+          "אהבתי",
+          "ahavti"
+        ]
+      },
+      "inf": null,
+      "en": [
+        "love",
+        "loves",
+        "loved",
+        "to love",
+        "loving"
+      ],
+      "comp": "food"
+    }
+  ],
+  "study_verb": {
+    "past": {
+      "1s": [
+        "למדתי",
+        "lamadti"
+      ],
+      "3ms": [
+        "למד",
+        "lamad"
+      ],
+      "3fs": [
+        "למדה",
+        "lamda"
+      ],
+      "3p": [
+        "למדו",
+        "lamdu"
+      ]
+    },
+    "en_past": "studied"
+  },
+  "complements": {
+    "food": [
+      [
+        "לחם",
+        "lekhem",
+        "bread"
+      ],
+      [
+        "דג",
+        "dag",
+        "fish"
+      ],
+      [
+        "פלאפל",
+        "falafel",
+        "falafel"
+      ],
+      [
+        "סושי",
+        "sushi",
+        "sushi"
+      ],
+      [
+        "ירקות",
+        "yerakot",
+        "vegetables"
+      ],
+      [
+        "פירות",
+        "perot",
+        "fruit"
+      ],
+      [
+        "ארוחת בוקר",
+        "arukhat boker",
+        "breakfast"
+      ],
+      [
+        "ארוחת ערב",
+        "arukhat erev",
+        "dinner"
+      ],
+      [
+        "העוגה",
+        "ha'uga",
+        "the cake"
+      ],
+      [
+        "ארוחת צהריים",
+        "arukhat tsohorayim",
+        "lunch"
+      ],
+      [
+        "סושי",
+        "sushi",
+        "sushi"
+      ]
+    ],
+    "drink": [
+      [
+        "קפה",
+        "kafe",
+        "coffee"
+      ],
+      [
+        "מים",
+        "mayim",
+        "water"
+      ],
+      [
+        "מיץ תפוזים",
+        "mits tapuzim",
+        "orange juice"
+      ],
+      [
+        "מיץ תפוחים",
+        "mits tapukhim",
+        "apple juice"
+      ]
+    ],
+    "openable": [
+      [
+        "את הדלת",
+        "et hadelet",
+        "the door"
+      ],
+      [
+        "את החלון",
+        "et hakhalon",
+        "the window"
+      ],
+      [
+        "את המתנה",
+        "et hamatana",
+        "the present"
+      ],
+      [
+        "את היין",
+        "et hayayin",
+        "the wine"
+      ],
+      [
+        "את המקרר",
+        "et hamekarer",
+        "the fridge"
+      ],
+      [
+        "את הארון",
+        "et ha'aron",
+        "the closet"
+      ]
+    ],
+    "sendable": [
+      [
+        "מייל",
+        "meyl",
+        "an email"
+      ],
+      [
+        "לינק",
+        "link",
+        "a link"
+      ],
+      [
+        "וואטסאפ",
+        "votsap",
+        "a WhatsApp message"
+      ]
+    ],
+    "activity": [
+      [
+        "ספורט",
+        "sport",
+        "sports"
+      ],
+      [
+        "יוגה",
+        "yoga",
+        "yoga"
+      ],
+      [
+        "סקי",
+        "ski",
+        "skiing"
+      ],
+      [
+        "שופינג",
+        "shoping",
+        "shopping"
+      ]
+    ],
+    "person_obj": [
+      [
+        "אותי",
+        "oti",
+        "me"
+      ],
+      [
+        "אותו",
+        "oto",
+        "him"
+      ],
+      [
+        "אותה",
+        "ota",
+        "her"
+      ],
+      [
+        "אותנו",
+        "otanu",
+        "us"
+      ],
+      [
+        "אותם",
+        "otam",
+        "them"
+      ]
+    ],
+    "person_et": [
+      [
+        "את ביונסה",
+        "et beyonse",
+        "Beyoncé"
+      ],
+      [
+        "את שילה",
+        "et shila",
+        "Sheila"
+      ],
+      [
+        "את שון",
+        "et shon",
+        "Sean"
+      ],
+      [
+        "את השכן",
+        "et hashakhen",
+        "the neighbor"
+      ],
+      [
+        "את החברים",
+        "et hakhaverim",
+        "the friends"
+      ]
+    ],
+    "buyable": [
+      [
+        "קפה",
+        "kafe",
+        "coffee"
+      ],
+      [
+        "בגדים",
+        "bgadim",
+        "clothes"
+      ],
+      [
+        "חולצה",
+        "khultsa",
+        "a shirt"
+      ],
+      [
+        "שמלה",
+        "simla",
+        "a dress"
+      ],
+      [
+        "פירות",
+        "perot",
+        "fruit"
+      ],
+      [
+        "ירקות",
+        "yerakot",
+        "vegetables"
+      ],
+      [
+        "מחשב",
+        "makhshev",
+        "a computer"
+      ],
+      [
+        "טלפון",
+        "telefon",
+        "a phone"
+      ],
+      [
+        "העוגה",
+        "ha'uga",
+        "a cake"
+      ]
+    ],
+    "seeable": [
+      [
+        "את הסרט",
+        "et haseret",
+        "the movie"
+      ],
+      [
+        "ספורט",
+        "sport",
+        "sports"
+      ],
+      [
+        "את זה",
+        "et ze",
+        "it"
+      ],
+      [
+        "את החברים",
+        "et hakhaverim",
+        "the friends"
+      ],
+      [
+        "את המשפחה",
+        "et hamishpakha",
+        "the family"
+      ]
+    ],
+    "writable": [
+      [
+        "אימייל",
+        "imeyl",
+        "an email"
+      ]
+    ],
+    "puttable": [
+      [
+        "את זה",
+        "et ze",
+        "it"
+      ],
+      [
+        "את הטלפון",
+        "et hatelefon",
+        "the phone"
+      ],
+      [
+        "את המחשב",
+        "et hamakhshev",
+        "the computer"
+      ],
+      [
+        "את זה על השולחן",
+        "et ze al hashulkhan",
+        "it on the table"
+      ]
+    ],
+    "quote": [
+      [
+        "\"בוקר טוב\"",
+        "\"boker tov\"",
+        "\"good morning\""
+      ],
+      [
+        "\"שלום\"",
+        "\"shalom\"",
+        "\"hello\""
+      ],
+      [
+        "\"תודה\"",
+        "\"toda\"",
+        "\"thank you\""
+      ]
+    ],
+    "about_it": [
+      [
+        "על זה",
+        "al ze",
+        "about it"
+      ]
+    ]
+  },
+  "locations": [
+    [
+      "בבית",
+      "babayit",
+      "at home"
+    ],
+    [
+      "בסלון",
+      "basalon",
+      "in the living room"
+    ],
+    [
+      "במטבח",
+      "bamitbakh",
+      "in the kitchen"
+    ],
+    [
+      "במשרד",
+      "bamisrad",
+      "in the office"
+    ],
+    [
+      "בחוץ",
+      "bakhuts",
+      "outside"
+    ],
+    [
+      "בפנים",
+      "bifnim",
+      "inside"
+    ],
+    [
+      "ליד החלון",
+      "leyad hakhalon",
+      "next to the window"
+    ],
+    [
+      "בים",
+      "bayam",
+      "at the beach"
+    ],
+    [
+      "בדרך",
+      "baderekh",
+      "on the way"
+    ],
+    [
+      "בשוק",
+      "bashuk",
+      "at the market"
+    ],
+    [
+      "בבנק",
+      "babank",
+      "at the bank"
+    ]
+  ],
+  "destinations": [
+    [
+      "הביתה",
+      "habayta",
+      "home"
+    ],
+    [
+      "לים",
+      "layam",
+      "to the beach"
+    ],
+    [
+      "לתל אביב",
+      "letel aviv",
+      "to Tel Aviv"
+    ],
+    [
+      "לירושלים",
+      "lirushalayim",
+      "to Jerusalem"
+    ],
+    [
+      "לספרד",
+      "lesfarad",
+      "to Spain"
+    ],
+    [
+      "לצרפת",
+      "letsarfat",
+      "to France"
+    ],
+    [
+      "לאיטליה",
+      "le'italya",
+      "to Italy"
+    ],
+    [
+      "לבאלי",
+      "lebali",
+      "to Bali"
+    ],
+    [
+      "למסיבה",
+      "lamesiba",
+      "to the party"
+    ],
+    [
+      "לשיעור",
+      "lashiur",
+      "to class"
+    ]
+  ],
+  "countries": [
+    [
+      "בקנדה",
+      "bekanada",
+      "in Canada"
+    ],
+    [
+      "בישראל",
+      "beyisrael",
+      "in Israel"
+    ],
+    [
+      "באיטליה",
+      "be'italya",
+      "in Italy"
+    ],
+    [
+      "בארצות הברית",
+      "be'artsot habrit",
+      "in the US"
+    ]
+  ],
+  "time_words": [
+    [
+      "היום",
+      "hayom",
+      "today"
+    ],
+    [
+      "אתמול",
+      "etmol",
+      "yesterday"
+    ],
+    [
+      "מחר",
+      "makhar",
+      "tomorrow"
+    ],
+    [
+      "בבוקר",
+      "baboker",
+      "in the morning"
+    ],
+    [
+      "בערב",
+      "ba'erev",
+      "in the evening"
+    ],
+    [
+      "עכשיו",
+      "akhshav",
+      "now"
+    ]
+  ],
+  "present_times": [
+    [
+      "היום",
+      "hayom",
+      "today"
+    ],
+    [
+      "בבוקר",
+      "baboker",
+      "in the morning"
+    ],
+    [
+      "בערב",
+      "ba'erev",
+      "in the evening"
+    ],
+    [
+      "עכשיו",
+      "akhshav",
+      "now"
+    ],
+    [
+      "בצוהריים",
+      "batsohorayim",
+      "at noon"
+    ],
+    [
+      "תמיד",
+      "tamid",
+      "always"
+    ],
+    [
+      "לפעמים",
+      "lif'amim",
+      "sometimes"
+    ]
+  ],
+  "past_times": [
+    [
+      "אתמול",
+      "etmol",
+      "yesterday"
+    ],
+    [
+      "היום",
+      "hayom",
+      "today"
+    ],
+    [
+      "בבוקר",
+      "baboker",
+      "in the morning"
+    ],
+    [
+      "בערב",
+      "ba'erev",
+      "in the evening"
+    ]
+  ],
+  "adjectives": {
+    "predicate": [
+      [
+        "עייף",
+        "ayef",
+        null,
+        null,
+        "tired"
+      ],
+      [
+        "רעב",
+        "ra'ev",
+        "רעבה",
+        "re'eva",
+        "hungry"
+      ],
+      [
+        "עסוק",
+        "asuk",
+        null,
+        null,
+        "busy"
+      ],
+      [
+        "בטוח",
+        "batuakh",
+        "בטוחה",
+        "betukha",
+        "sure"
+      ],
+      [
+        null,
+        null,
+        "מוכנה",
+        "mukhana",
+        "ready"
+      ],
+      [
+        "שמח",
+        "same'akh",
+        "שמחה",
+        "smekha",
+        "happy"
+      ]
+    ],
+    "ze": [
+      [
+        "מסובך",
+        "mesuvakh",
+        "complicated"
+      ],
+      [
+        "קשה",
+        "kashe",
+        "hard"
+      ],
+      [
+        "קל",
+        "kal",
+        "easy"
+      ],
+      [
+        "טעים",
+        "ta'im",
+        "tasty"
+      ],
+      [
+        "מושלם",
+        "mushlam",
+        "perfect"
+      ],
+      [
+        "מהמם",
+        "mehamem",
+        "amazing"
+      ],
+      [
+        "טוב",
+        "tov",
+        "good"
+      ],
+      [
+        "נכון",
+        "nakhon",
+        "correct"
+      ]
+    ],
+    "midi": [
+      [
+        "מתוק",
+        "matok",
+        "sweet"
+      ],
+      [
+        "חריף",
+        "kharif",
+        "spicy"
+      ],
+      [
+        "מסובך",
+        "mesuvakh",
+        "complicated"
+      ],
+      [
+        "קשה",
+        "kashe",
+        "hard"
+      ],
+      [
+        "קל",
+        "kal",
+        "easy"
+      ],
+      [
+        "חם",
+        "kham",
+        "hot"
+      ],
+      [
+        "קר",
+        "kar",
+        "cold"
+      ]
+    ],
+    "definite_np": [
+      [
+        "המחשב",
+        "hamakhshev",
+        "the computer",
+        "החדש",
+        "hakhadash",
+        "new"
+      ],
+      [
+        "השמלה",
+        "hasimla",
+        "the dress",
+        "החדשה",
+        "hakhadasha",
+        "new"
+      ],
+      [
+        "הבגדים",
+        "habgadim",
+        "the clothes",
+        "החדשים",
+        "hakhadashim",
+        "new"
+      ],
+      [
+        "הבית",
+        "habayit",
+        "the house",
+        "הלבן",
+        "halavan",
+        "white"
+      ],
+      [
+        "הסמסטר",
+        "hasemestr",
+        "the semester",
+        "הראשון",
+        "harishon",
+        "first"
+      ],
+      [
+        "הטיסה",
+        "hatisa",
+        "the flight",
+        "החדשה",
+        "hakhadasha",
+        "new"
+      ],
+      [
+        "העוגה",
+        "ha'uga",
+        "the cake",
+        "הטובה",
+        "hatova",
+        "good"
+      ],
+      [
+        "המקרר",
+        "hamekarer",
+        "the fridge",
+        "החדש",
+        "hakhadash",
+        "new"
+      ],
+      [
+        "השולחן",
+        "hashulkhan",
+        "the table",
+        "הלבן",
+        "halavan",
+        "white"
+      ]
+    ]
+  },
+  "possession": {
+    "possessable": [
+      [
+        "טלפון",
+        "telefon",
+        "phone"
+      ],
+      [
+        "מחשב",
+        "makhshev",
+        "computer"
+      ],
+      [
+        "חתול",
+        "khatul",
+        "cat"
+      ],
+      [
+        "שיר",
+        "shir",
+        "song"
+      ],
+      [
+        "כלב",
+        "kelev",
+        "dog"
+      ],
+      [
+        "משפחה",
+        "mishpakha",
+        "family"
+      ]
+    ],
+    "yesh_l": [
+      [
+        "לי",
+        "li",
+        "I"
+      ],
+      [
+        "לך",
+        "lekha",
+        "you"
+      ],
+      [
+        "לו",
+        "lo",
+        "he"
+      ],
+      [
+        "לה",
+        "la",
+        "she"
+      ],
+      [
+        "לנו",
+        "lanu",
+        "we"
+      ],
+      [
+        "להם",
+        "lahem",
+        "they"
+      ]
+    ],
+    "modifiers": [
+      [
+        "חדש",
+        "khadash",
+        "new"
+      ],
+      [
+        "קטן",
+        "katan",
+        "small"
+      ]
+    ],
+    "shel": [
+      [
+        "שלי",
+        "sheli",
+        "my"
+      ],
+      [
+        "שלך",
+        "shelkha",
+        "your"
+      ],
+      [
+        "שלו",
+        "shelo",
+        "his"
+      ],
+      [
+        "שלה",
+        "shela",
+        "her"
+      ],
+      [
+        "שלנו",
+        "shelanu",
+        "our"
+      ]
+    ],
+    "shel_nouns": [
+      [
+        "הטלפון",
+        "hatelefon",
+        "phone"
+      ],
+      [
+        "המחשב",
+        "hamakhshev",
+        "computer"
+      ],
+      [
+        "הקינוח",
+        "hakinuakh",
+        "dessert"
+      ],
+      [
+        "הטיסה",
+        "hatisa",
+        "flight"
+      ],
+      [
+        "השיעור",
+        "hashiur",
+        "class"
+      ],
+      [
+        "העוגה",
+        "ha'uga",
+        "cake"
+      ],
+      [
+        "הכלב",
+        "hakelev",
+        "dog"
+      ]
+    ]
+  },
+  "infinitives": [
+    [
+      "לאכול",
+      "le'ekhol",
+      "to eat",
+      "eating",
+      null
+    ],
+    [
+      "לשבת",
+      "lashevet",
+      "to sit",
+      "sitting",
+      "location"
+    ],
+    [
+      "לבוא",
+      "lavo",
+      "to come",
+      "coming",
+      null
+    ],
+    [
+      "לדבר",
+      "ledaber",
+      "to talk",
+      "talking",
+      null
+    ],
+    [
+      "לפגוש",
+      "lifgosh",
+      "to meet",
+      "meeting",
+      null
+    ],
+    [
+      "לפתוח",
+      "liftoakh",
+      "to open",
+      "opening",
+      null
+    ],
+    [
+      "לסגור",
+      "lisgor",
+      "to close",
+      "closing",
+      null
+    ],
+    [
+      "לשלוח",
+      "lishloakh",
+      "to send",
+      "sending",
+      null
+    ],
+    [
+      "לקנות",
+      "liknot",
+      "to buy",
+      "buying",
+      null
+    ],
+    [
+      "לראות",
+      "lir'ot",
+      "to see",
+      "seeing",
+      "seeable"
+    ],
+    [
+      "לעשות ספורט",
+      "la'asot sport",
+      "to exercise",
+      "exercising",
+      null
+    ],
+    [
+      "לעשות יוגה",
+      "la'asot yoga",
+      "to do yoga",
+      "doing yoga",
+      null
+    ],
+    [
+      "לעשות סקי",
+      "la'asot ski",
+      "to ski",
+      "skiing",
+      null
+    ],
+    [
+      "לעשות שופינג",
+      "la'asot shoping",
+      "to go shopping",
+      "shopping",
+      null
+    ],
+    [
+      "לטוס",
+      "latus",
+      "to fly",
+      "flying",
+      "destination"
+    ],
+    [
+      "לנסוע",
+      "linso'a",
+      "to travel",
+      "traveling",
+      "destination"
+    ],
+    [
+      "להיות",
+      "lihyot",
+      "to be",
+      "being",
+      null
+    ],
+    [
+      "לשאול",
+      "lish'ol",
+      "to ask",
+      "asking",
+      null
+    ],
+    [
+      "לעבוד",
+      "la'avod",
+      "to work",
+      "working",
+      null
+    ],
+    [
+      "לגור",
+      "lagur",
+      "to live",
+      "living",
+      null
+    ],
+    [
+      "ללמוד",
+      "lilmod",
+      "to study",
+      "studying",
+      null
+    ],
+    [
+      "לישון",
+      "lishon",
+      "to sleep",
+      "sleeping",
+      null
+    ]
+  ],
+  "template_data": {
+    "even_past_names": [
+      [
+        "מדונה",
+        "madonna",
+        "Madonna",
+        "f"
+      ],
+      [
+        "ביונסה",
+        "beyonse",
+        "Beyoncé",
+        "f"
+      ],
+      [
+        "רומיאו",
+        "romeo",
+        "Romeo",
+        "m"
+      ],
+      [
+        "בראד",
+        "brad",
+        "Brad",
+        "m"
+      ]
+    ],
+    "even_past_verbs_m": [
+      [
+        [
+          "למד",
+          "lamad"
+        ],
+        "studied"
+      ],
+      [
+        [
+          "עבד",
+          "avad"
+        ],
+        "worked"
+      ],
+      [
+        [
+          "למד",
+          "lamad"
+        ],
+        "studied"
+      ]
+    ],
+    "even_past_verbs_f": [
+      [
+        [
+          "למדה",
+          "lamda"
+        ],
+        "studied"
+      ]
+    ],
+    "sure_that_clauses": [
+      [
+        "שהדלת פתוחה",
+        "shehadelet ptukha",
+        "the door is open"
+      ],
+      [
+        "שהחלון פתוח",
+        "shehakhalon patu'akh",
+        "the window is open"
+      ],
+      [
+        "שהדלת סגורה",
+        "shehadelet sgura",
+        "the door is closed"
+      ]
+    ],
+    "because_of_causes": [
+      [
+        "הבוס",
+        "habos",
+        "the boss"
+      ],
+      [
+        "הבוסית",
+        "habosit",
+        "the boss"
+      ],
+      [
+        "האהבה",
+        "ha'ahava",
+        "love"
+      ],
+      [
+        "הטיסה",
+        "hatisa",
+        "the flight"
+      ]
+    ],
+    "because_of_states": [
+      [
+        "בלחץ",
+        "belakhats",
+        "stressed"
+      ],
+      [
+        "עייף",
+        "ayef",
+        "tired"
+      ],
+      [
+        "עסוק",
+        "asuk",
+        "busy"
+      ]
+    ],
+    "nobody_openers": [
+      [
+        "אף אחד לא",
+        "af ekhad lo",
+        "Nobody's"
+      ],
+      [
+        "שום דבר לא",
+        "shum davar lo",
+        "Nothing is"
+      ]
+    ],
+    "frequency_counts": [
+      [
+        "פעם אחת",
+        "pa'am akhat",
+        "once"
+      ],
+      [
+        "פעמיים",
+        "pa'amayim",
+        "twice"
+      ],
+      [
+        "שלוש פעמים",
+        "shalosh pe'amim",
+        "three times"
+      ]
+    ],
+    "frequency_periods": [
+      [
+        "ביום",
+        "bayom",
+        "a day"
+      ],
+      [
+        "בשבוע",
+        "bashavua",
+        "a week"
+      ],
+      [
+        "בשנה",
+        "bashana",
+        "a year"
+      ]
+    ],
+    "need_inf_forms": {
+      "ms": [
+        "צריך",
+        "tsarikh"
+      ],
+      "fs": [
+        "צריכה",
+        "tsrikha"
+      ]
+    },
+    "feel_like_forms": [
+      [
+        "בא לי",
+        "ba li",
+        "I"
+      ],
+      [
+        "בא לך",
+        "ba lekha",
+        "you"
+      ],
+      [
+        "בא לו",
+        "ba lo",
+        "he"
+      ],
+      [
+        "בא לה",
+        "ba la",
+        "she"
+      ],
+      [
+        "בא לנו",
+        "ba lanu",
+        "we"
+      ],
+      [
+        "בא להם",
+        "ba lahem",
+        "they"
+      ]
+    ],
+    "possible_complements": [
+      [
+        "לדבר",
+        "ledaber",
+        "to talk"
+      ],
+      [
+        "לשבת",
+        "lashevet",
+        "to sit"
+      ],
+      [
+        "לאכול",
+        "le'ekhol",
+        "to eat"
+      ],
+      [
+        "לבוא",
+        "lavo",
+        "to come"
+      ],
+      [
+        "לראות",
+        "lir'ot",
+        "to see"
+      ],
+      [
+        "לקנות",
+        "liknot",
+        "to buy"
+      ],
+      [
+        "לעשות",
+        "la'asot",
+        "to do"
+      ]
+    ],
+    "could_be_phrases": [
+      [
+        "יכול להיות",
+        "yakhol lihyot",
+        "Could be"
+      ],
+      [
+        "לא יכול להיות",
+        "lo yakhol lihyot",
+        "No way"
+      ]
+    ],
+    "about_topics": [
+      [
+        "על מה",
+        "al ma",
+        "About what"
+      ],
+      [
+        "על מי",
+        "al mi",
+        "About whom"
+      ]
+    ],
+    "countable_nouns": [
+      [
+        "חתולים",
+        "khatulim",
+        "cats"
+      ],
+      [
+        "חברים",
+        "khaverim",
+        "friends"
+      ],
+      [
+        "שיעורים",
+        "shi'urim",
+        "classes"
+      ],
+      [
+        "מילים",
+        "milim",
+        "words"
+      ],
+      [
+        "ארוחות",
+        "arukhot",
+        "meals"
+      ]
+    ],
+    "adverbs": {
+      "still": [
+        "עדיין",
+        "adain",
+        "still"
+      ],
+      "almost": [
+        "כמעט",
+        "kim'at",
+        "almost"
+      ],
+      "again": [
+        "עוד",
+        "od",
+        "again"
+      ],
+      "together": [
+        "יחד",
+        "yakhad",
+        "together"
+      ],
+      "only": [
+        "רק",
+        "rak",
+        "only"
+      ],
+      "always": [
+        "תמיד",
+        "tamid",
+        "always"
+      ],
+      "sometimes": [
+        "לפעמים",
+        "lif'amim",
+        "sometimes"
+      ],
+      "a_lot": [
+        "הרבה",
+        "harbe",
+        "a lot"
+      ]
+    },
+    "fixed_expressions": [
+      [
+        "מה נשמע?",
+        "ma nishma?",
+        "What's up?"
+      ],
+      [
+        "הכל בסדר",
+        "hakol beseder",
+        "Everything is fine"
+      ],
+      [
+        "בהצלחה!",
+        "behatsalkha!",
+        "Good luck!"
+      ],
+      [
+        "לא נורא",
+        "lo nora",
+        "No big deal"
+      ],
+      [
+        "מה קורה?",
+        "ma kore?",
+        "What's happening?"
+      ],
+      [
+        "כל הכבוד!",
+        "kol hakavod!",
+        "Well done!"
+      ],
+      [
+        "בכיף",
+        "bekef",
+        "With pleasure"
+      ],
+      [
+        "סבבה",
+        "sababa",
+        "Cool, alright"
+      ]
+    ]
+  }
+}

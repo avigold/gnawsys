@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gnawsys</title>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #fafafa;
+  --card: #fff;
+  --border: #e8e8e8;
+  --hebrew: #1a1a1a;
+  --translit: #6b6b6b;
+  --english: #9a9a9a;
+  --header: #bbb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c0c0c;
+    --card: #161616;
+    --border: #222;
+    --hebrew: #e4e4e4;
+    --translit: #7a7a7a;
+    --english: #555;
+    --header: #444;
+  }
+}
+
+body {
+  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0 1.25rem;
+  color: var(--header);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.sentence {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 0.6rem;
+  opacity: 0;
+  transform: translateY(6px);
+  animation: show 0.35s ease forwards;
+}
+
+@keyframes show {
+  to { opacity: 1; transform: none; }
+}
+
+.heb {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--hebrew);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.55;
+  margin-bottom: 0.3rem;
+}
+
+.tr {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--translit);
+  line-height: 1.4;
+  margin-bottom: 0.15rem;
+}
+
+.en {
+  font-size: 0.85rem;
+  color: var(--english);
+  line-height: 1.4;
+}
+
+#sentinel { height: 1px; }
+
+@media (max-width: 480px) {
+  .wrap { padding: 0 0.75rem 3rem; }
+  header { padding: 1.5rem 0 1rem; }
+  .sentence { padding: 1rem 1.1rem; border-radius: 8px; }
+  .heb { font-size: 1.3rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>gnawsys</header>
+  <div id="feed"></div>
+  <div id="sentinel"></div>
+</div>
+<script>
+const BATCH = 20;
+let busy = false;
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+async function load() {
+  if (busy) return;
+  busy = true;
+  try {
+    const r = await fetch(`/api/sentences?n=${BATCH}`);
+    const data = await r.json();
+    const feed = document.getElementById('feed');
+    data.forEach((s, i) => {
+      const el = document.createElement('div');
+      el.className = 'sentence';
+      el.style.animationDelay = `${i * 40}ms`;
+      el.innerHTML =
+        `<div class="heb">${esc(s.hebrew)}</div>` +
+        `<div class="tr">${esc(s.transliteration)}</div>` +
+        `<div class="en">${esc(s.english)}</div>`;
+      feed.appendChild(el);
+    });
+  } catch (e) {
+    console.error(e);
+  }
+  busy = false;
+}
+
+new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) load();
+}, { rootMargin: '300px' }).observe(document.getElementById('sentinel'));
+
+load();
+</script>
+</body>
+</html>

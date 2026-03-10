@@ -1,0 +1,1142 @@
+[
+    {
+        "id": "nominal_sentence",
+        "name": "Nominal Sentence (Present State)",
+        "category": "basic",
+        "description": "Describes a current state or identity with no verb. Hebrew has no present-tense 'to be'.",
+        "structure": "[subject] [adjective / prepositional phrase]",
+        "notes": "Adjective must agree in gender/number with subject. Prepositional phrases are invariable.",
+        "examples": [
+            {
+                "hebrew": "אני בפגישה",
+                "transliteration": "ani bapgisha",
+                "english": "I'm in a meeting"
+            },
+            {
+                "hebrew": "זה מסובך",
+                "transliteration": "ze mesuvakh",
+                "english": "It's complicated"
+            },
+            {
+                "hebrew": "הבנק סגור בסופ\"ש",
+                "transliteration": "habank sagur basofash",
+                "english": "The bank is closed on the weekend"
+            },
+            {
+                "hebrew": "הכול בסדר",
+                "transliteration": "hakol beseder",
+                "english": "Everything is okay"
+            }
+        ]
+    },
+    {
+        "id": "present_tense",
+        "name": "Present Tense Action",
+        "category": "basic",
+        "description": "Subject performs an ongoing or habitual action using the present-tense participle (benoni).",
+        "structure": "[subject] [present verb] ([direct object])",
+        "notes": "Present verb agrees in gender/number with subject. Use את (et) before definite direct objects.",
+        "examples": [
+            {
+                "hebrew": "הוא שותה קפה",
+                "transliteration": "hu shote kafe",
+                "english": "He drinks / is drinking coffee"
+            },
+            {
+                "hebrew": "הוא סוגר את הדלת",
+                "transliteration": "hu soger et hadelet",
+                "english": "He is closing the door"
+            },
+            {
+                "hebrew": "היא אוכלת ארוחת צוהריים",
+                "transliteration": "hi okhelet arukhat tsohorayim",
+                "english": "She's having lunch"
+            },
+            {
+                "hebrew": "כולם מדברים על זה",
+                "transliteration": "kulam medabrim al ze",
+                "english": "Everyone is talking about it"
+            }
+        ]
+    },
+    {
+        "id": "past_tense",
+        "name": "Past Tense Action",
+        "category": "basic",
+        "description": "Subject performed an action in the past. Verb is conjugated for person, gender, and number.",
+        "structure": "[subject] [past verb] ([direct object])",
+        "notes": "Past verb conjugates by person (אני/אתה/הוא/etc.). Subject pronoun is often dropped when the conjugation is unambiguous.",
+        "examples": [
+            {
+                "hebrew": "הוא כתב אימייל",
+                "transliteration": "hu katav imeyl",
+                "english": "He wrote an email"
+            },
+            {
+                "hebrew": "אנחנו סגרנו את הדלת",
+                "transliteration": "anakhnu sagarnu et hadelet",
+                "english": "We closed the door"
+            },
+            {
+                "hebrew": "הם אכלו פלאפל",
+                "transliteration": "hem akhlu falafel",
+                "english": "They ate falafel"
+            },
+            {
+                "hebrew": "אכלתי לחם",
+                "transliteration": "akhalti lekhem",
+                "english": "I ate bread"
+            }
+        ]
+    },
+    {
+        "id": "past_with_haya",
+        "name": "Past with היה (Was)",
+        "category": "basic",
+        "description": "Describes a past state using היה (was). This is the past tense of the nominal sentence.",
+        "structure": "[subject] היה [adjective / state]",
+        "notes": "היה conjugates: הוא היה, היא היתה, זה היה. Often used with adjectives or predicate phrases.",
+        "examples": [
+            {
+                "hebrew": "הוא היה עייף",
+                "transliteration": "hu haya ayef",
+                "english": "He was tired"
+            },
+            {
+                "hebrew": "זה היה מהמם",
+                "transliteration": "ze haya mehamem",
+                "english": "It was amazing"
+            },
+            {
+                "hebrew": "זה לא היה בסדר",
+                "transliteration": "ze lo haya beseder",
+                "english": "It wasn't okay"
+            },
+            {
+                "hebrew": "זה היה מסובך",
+                "transliteration": "ze haya mesuvakh",
+                "english": "It was complicated"
+            }
+        ]
+    },
+    {
+        "id": "want_infinitive",
+        "name": "Want + Infinitive",
+        "category": "modal",
+        "description": "Expresses desire or wish using רוצה (wants) followed by an infinitive verb.",
+        "structure": "[subject] רוצה [infinitive] ([object])",
+        "notes": "רוצה is the same for m. and f. singular. Infinitive verbs start with ל (le/la/li).",
+        "examples": [
+            {
+                "hebrew": "אני רוצה לנסוע לתל אביב",
+                "transliteration": "ani rotse linso'a letel aviv",
+                "english": "I want to travel to Tel Aviv"
+            },
+            {
+                "hebrew": "היא רוצה לשבת בסלון",
+                "transliteration": "hi rotse lashevet basalon",
+                "english": "She wants to sit in the living room"
+            },
+            {
+                "hebrew": "הוא רוצה לקנות פירות",
+                "transliteration": "hu rotse liknot perot",
+                "english": "He wants to buy fruit"
+            }
+        ]
+    },
+    {
+        "id": "can_infinitive",
+        "name": "Can + Infinitive",
+        "category": "modal",
+        "description": "Expresses ability or permission using יכול/יכולה (can) followed by an infinitive.",
+        "structure": "[subject] יכול/ה [infinitive] ([object])",
+        "notes": "יכול (m.) / יכולה (f.) must agree in gender with the subject.",
+        "examples": [
+            {
+                "hebrew": "מתי את יכולה לבוא?",
+                "transliteration": "matai et yekhola lavo?",
+                "english": "When can you come?"
+            },
+            {
+                "hebrew": "מה אני יכול לעשות?",
+                "transliteration": "ma ani yakhol la'asot?",
+                "english": "What can I do?"
+            },
+            {
+                "hebrew": "את יכולה לפתוח את הדלת?",
+                "transliteration": "et yekhola liftoakh et hadelet?",
+                "english": "Could you open the door?"
+            }
+        ]
+    },
+    {
+        "id": "like_infinitive",
+        "name": "Like + Infinitive",
+        "category": "modal",
+        "description": "Expresses preference or enjoyment using אוהב/ת (likes) followed by an infinitive.",
+        "structure": "[subject] אוהב/ת [infinitive] ([object])",
+        "notes": "אוהב (m.) / אוהבת (f.) / אוהבים (m.pl.). The same verb means 'love' with people and 'like' with activities.",
+        "examples": [
+            {
+                "hebrew": "אתה אוהב לראות ספורט?",
+                "transliteration": "ata ohev lir'ot sport?",
+                "english": "Do you like watching sports?"
+            },
+            {
+                "hebrew": "אני אוהבת לעשות שופינג",
+                "transliteration": "ani ohevet la'asot shoping",
+                "english": "I like going shopping"
+            },
+            {
+                "hebrew": "אתם אוהבים לעשות סקי?",
+                "transliteration": "atem ohavim la'asot ski?",
+                "english": "Do you like skiing?"
+            }
+        ]
+    },
+    {
+        "id": "like_object",
+        "name": "Like + Direct Object",
+        "category": "modal",
+        "description": "Expresses liking a specific thing or person using אוהב/ת + את (object marker).",
+        "structure": "[subject] אוהב/ת את [definite object]",
+        "notes": "When liking a specific/definite thing, use את before the object. Without את for indefinite: אתה אוהב סושי?",
+        "examples": [
+            {
+                "hebrew": "היא אוהבת את תל אביב",
+                "transliteration": "hi ohevet et tel aviv",
+                "english": "She likes Tel Aviv"
+            },
+            {
+                "hebrew": "אתה אוהב את העוגה?",
+                "transliteration": "ata ohev et ha'uga?",
+                "english": "Do you like the cake?"
+            },
+            {
+                "hebrew": "אתה אוהב סושי?",
+                "transliteration": "ata ohev sushi?",
+                "english": "Do you like sushi?"
+            }
+        ]
+    },
+    {
+        "id": "need_infinitive",
+        "name": "Need + Infinitive",
+        "category": "modal",
+        "description": "Expresses necessity or obligation using צריך/צריכה (need) followed by an infinitive.",
+        "structure": "[subject] צריך/ה [infinitive] ([object/place])",
+        "notes": "צריך (m.) / צריכה (f.) must agree in gender.",
+        "examples": [
+            {
+                "hebrew": "מתי את צריכה להיות שם?",
+                "transliteration": "matai et tsrikha lihyot sham?",
+                "english": "When do you need to be there?"
+            }
+        ]
+    },
+    {
+        "id": "possible_infinitive",
+        "name": "אפשר + Infinitive (Is It Possible To)",
+        "category": "modal",
+        "description": "Impersonal construction for polite requests or asking permission.",
+        "structure": "אפשר [infinitive] ([object])?",
+        "notes": "No subject needed. Literally 'possible to...' Used for polite requests like 'may I...'",
+        "examples": [
+            {
+                "hebrew": "אפשר לשאול משהו?",
+                "transliteration": "efshar lish'ol mashehu?",
+                "english": "May I ask something?"
+            }
+        ]
+    },
+    {
+        "id": "feel_like_infinitive",
+        "name": "בא לי + Infinitive (Feel Like)",
+        "category": "modal",
+        "description": "Expresses desire or craving using the idiom בא ל (literally 'comes to me').",
+        "structure": "בא ל[person pronoun suffix] [infinitive] ([destination/object])",
+        "notes": "בא לי (I feel like), בא לך (you feel like), בא לו (he feels like), etc.",
+        "examples": [
+            {
+                "hebrew": "בא לי לטוס לבאלי",
+                "transliteration": "ba li latus lebali",
+                "english": "I feel like flying to Bali"
+            }
+        ]
+    },
+    {
+        "id": "could_be",
+        "name": "יכול להיות (Could Be / No Way)",
+        "category": "modal",
+        "description": "Fixed expression for expressing possibility or impossibility.",
+        "structure": "(לא) יכול להיות",
+        "notes": "יכול להיות = could be, maybe. לא יכול להיות = no way, impossible.",
+        "examples": [
+            {
+                "hebrew": "יכול להיות",
+                "transliteration": "yakhol lihyot",
+                "english": "Could be, it's possible"
+            },
+            {
+                "hebrew": "לא יכול להיות",
+                "transliteration": "lo yakhol lihyot",
+                "english": "No way, it's impossible"
+            }
+        ]
+    },
+    {
+        "id": "possession_yesh",
+        "name": "Possession with יש ל (To Have)",
+        "category": "possession",
+        "description": "Hebrew expresses 'to have' as 'there is to [person]'. Negated with אין.",
+        "structure": "יש ל[person] [noun] / אין ל[person] [noun]",
+        "notes": "לי (I have), לך (you have), לו (he has), לה (she has), לנו (we have), לכם (you pl. have), להם/להן (they have).",
+        "examples": [
+            {
+                "hebrew": "יש לו טלפון חדש",
+                "transliteration": "yesh lo telefon khadash",
+                "english": "He has a new phone"
+            },
+            {
+                "hebrew": "יש להם הרבה כסף",
+                "transliteration": "yesh lahem harbe kesef",
+                "english": "They have a lot of money"
+            },
+            {
+                "hebrew": "יש לך שאלה?",
+                "transliteration": "yesh lekha she'ela?",
+                "english": "Do you have a question?"
+            },
+            {
+                "hebrew": "אין לחץ",
+                "transliteration": "ein lakhats",
+                "english": "No pressure (there is no pressure)"
+            }
+        ]
+    },
+    {
+        "id": "possessive_shel",
+        "name": "Possessive with של (Of / My / Your)",
+        "category": "possession",
+        "description": "Expresses possession using של or its pronoun suffixes (שלי, שלך, etc.).",
+        "structure": "ה[noun] שלי/שלך/שלו/שלה/שלנו",
+        "notes": "The noun takes the definite article ה. שלי (my), שלך (your), שלו (his), שלה (her), שלנו (our). של מי = whose.",
+        "examples": [
+            {
+                "hebrew": "איפה הטלפון שלי?",
+                "transliteration": "eifo hatelefon sheli?",
+                "english": "Where's my phone?"
+            },
+            {
+                "hebrew": "איך הקינוח שלך?",
+                "transliteration": "eikh hakinuakh shelkha?",
+                "english": "How is your dessert?"
+            },
+            {
+                "hebrew": "זה לא שלי",
+                "transliteration": "ze lo sheli",
+                "english": "It's not mine"
+            },
+            {
+                "hebrew": "של מי זה?",
+                "transliteration": "shel mi ze?",
+                "english": "Whose is this?"
+            }
+        ]
+    },
+    {
+        "id": "definite_adjective",
+        "name": "Definite Noun + Definite Adjective",
+        "category": "noun_phrase",
+        "description": "When modifying a definite noun with an adjective, both noun and adjective take the definite article ה.",
+        "structure": "ה[noun] ה[adjective]",
+        "notes": "Adjective agrees in gender/number: המחשב החדש (m.), השמלה החדשה (f.), הבגדים החדשים (m.pl.).",
+        "examples": [
+            {
+                "hebrew": "המחשב החדש",
+                "transliteration": "hamakhshev hakhadash",
+                "english": "The new computer"
+            },
+            {
+                "hebrew": "השמלה החדשה",
+                "transliteration": "hasimla hakhadasha",
+                "english": "The new dress"
+            },
+            {
+                "hebrew": "הבגדים החדשים",
+                "transliteration": "habgadim hakhadashim",
+                "english": "The new clothes"
+            },
+            {
+                "hebrew": "הבית הלבן",
+                "transliteration": "habayit halavan",
+                "english": "The White House"
+            }
+        ]
+    },
+    {
+        "id": "question_what",
+        "name": "מה Question (What)",
+        "category": "question",
+        "description": "Asks 'what' about an action, state, or object.",
+        "structure": "מה [subject] [verb] ([object/time])?",
+        "notes": "Can also be used without a verb: ?מה איתך (What about you?). Word order: מה comes first.",
+        "examples": [
+            {
+                "hebrew": "מה אתה שותה בבוקר?",
+                "transliteration": "ma ata shote baboker?",
+                "english": "What do you drink in the morning?"
+            },
+            {
+                "hebrew": "מה הם למדו?",
+                "transliteration": "ma hem lamdu?",
+                "english": "What did they study?"
+            },
+            {
+                "hebrew": "מה את רוצה לאכול?",
+                "transliteration": "ma et rotse le'ekhol?",
+                "english": "What do you want to eat?"
+            },
+            {
+                "hebrew": "מה אתה עושה עכשיו?",
+                "transliteration": "ma ata ose akhshav?",
+                "english": "What are you doing now?"
+            }
+        ]
+    },
+    {
+        "id": "question_where",
+        "name": "איפה Question (Where)",
+        "category": "question",
+        "description": "Asks about location or place.",
+        "structure": "איפה [subject] [verb]? / איפה [noun]?",
+        "notes": "Used for static location. For direction/destination, use לאן instead.",
+        "examples": [
+            {
+                "hebrew": "איפה הוא עבד?",
+                "transliteration": "eifo hu avad?",
+                "english": "Where did he work?"
+            },
+            {
+                "hebrew": "איפה אתה גר?",
+                "transliteration": "eifo ata gar?",
+                "english": "Where do you live?"
+            },
+            {
+                "hebrew": "איפה הפגישה?",
+                "transliteration": "eifo hapgisha?",
+                "english": "Where is the meeting?"
+            }
+        ]
+    },
+    {
+        "id": "question_where_to",
+        "name": "לאן Question (Where To)",
+        "category": "question",
+        "description": "Asks about direction or destination of movement.",
+        "structure": "לאן [subject] [verb of motion]?",
+        "notes": "Used with movement verbs: הולכים (going), טסים (flying), נוסעת (traveling).",
+        "examples": [
+            {
+                "hebrew": "לאן הם הולכים?",
+                "transliteration": "le'an hem holkhim?",
+                "english": "Where are they going?"
+            },
+            {
+                "hebrew": "לאן הם טסים?",
+                "transliteration": "le'an hem tasim?",
+                "english": "Where are they flying to?"
+            },
+            {
+                "hebrew": "לאן היא הלכה?",
+                "transliteration": "le'an hi halkha?",
+                "english": "Where did she go?"
+            }
+        ]
+    },
+    {
+        "id": "question_when",
+        "name": "מתי Question (When)",
+        "category": "question",
+        "description": "Asks about time.",
+        "structure": "מתי [subject] [verb]? / מתי [noun phrase]?",
+        "notes": "Can be used with both present and past tense verbs, and with noun phrases.",
+        "examples": [
+            {
+                "hebrew": "מתי הסרט מתחיל?",
+                "transliteration": "matai haseret matkhil?",
+                "english": "When does the movie start?"
+            },
+            {
+                "hebrew": "מתי הטיסה שלך?",
+                "transliteration": "matai hatisa shelkha?",
+                "english": "When is your flight?"
+            },
+            {
+                "hebrew": "מתי את יכולה לבוא?",
+                "transliteration": "matai et yekhola lavo?",
+                "english": "When can you come?"
+            }
+        ]
+    },
+    {
+        "id": "question_why",
+        "name": "למה Question (Why)",
+        "category": "question",
+        "description": "Asks for a reason.",
+        "structure": "למה [subject] (לא) [verb]?",
+        "notes": "Commonly combined with negation: למה לא (why not / why didn't).",
+        "examples": [
+            {
+                "hebrew": "למה אתה בלחץ?",
+                "transliteration": "lama ata belakhats?",
+                "english": "Why are you stressed?"
+            },
+            {
+                "hebrew": "למה אתה לא אוכל?",
+                "transliteration": "lama ata lo okhel?",
+                "english": "Why aren't you eating?"
+            },
+            {
+                "hebrew": "למה לא באת למסיבה?",
+                "transliteration": "lama lo bata lamesiba?",
+                "english": "Why didn't you come to the party?"
+            }
+        ]
+    },
+    {
+        "id": "question_how",
+        "name": "איך Question (How)",
+        "category": "question",
+        "description": "Asks about quality, manner, or state.",
+        "structure": "איך [noun phrase]? / איך [verb]?",
+        "notes": "Often used without a verb in nominal questions: איך הקינוח? (How's the dessert?).",
+        "examples": [
+            {
+                "hebrew": "איך הקינוח שלך?",
+                "transliteration": "eikh hakinuakh shelkha?",
+                "english": "How is your dessert?"
+            },
+            {
+                "hebrew": "איך היה?",
+                "transliteration": "eikh haya?",
+                "english": "How was it?"
+            }
+        ]
+    },
+    {
+        "id": "question_how_many",
+        "name": "כמה Question (How Much / How Many)",
+        "category": "question",
+        "description": "Asks about quantity or frequency.",
+        "structure": "כמה [noun] (ב[time period])?",
+        "notes": "Often used with פעמים (times) for frequency questions.",
+        "examples": [
+            {
+                "hebrew": "כמה פעמים בשנה?",
+                "transliteration": "kama pe'amim bashana?",
+                "english": "How many times a year?"
+            },
+            {
+                "hebrew": "כמה פעמים בשבוע?",
+                "transliteration": "kama pe'amim bashavua?",
+                "english": "How many times a week?"
+            }
+        ]
+    },
+    {
+        "id": "question_about",
+        "name": "על מה / על מי Question (About What / Whom)",
+        "category": "question",
+        "description": "Asks about the topic or person being discussed.",
+        "structure": "על מה/מי [subject] [verb]?",
+        "notes": "Preposition על (about/on) comes before the question word.",
+        "examples": [
+            {
+                "hebrew": "על מה הוא מדבר?",
+                "transliteration": "al ma hu medaber?",
+                "english": "What is he talking about?"
+            },
+            {
+                "hebrew": "על מי את מדברת?",
+                "transliteration": "al mi et medaberet?",
+                "english": "Who are you talking about?"
+            }
+        ]
+    },
+    {
+        "id": "question_yes_no",
+        "name": "Yes/No Question (Intonation Only)",
+        "category": "question",
+        "description": "A statement turned into a yes/no question by rising intonation alone. No word order change.",
+        "structure": "[statement]?",
+        "notes": "Hebrew yes/no questions use the exact same word order as statements — only intonation (or a question mark) changes.",
+        "examples": [
+            {
+                "hebrew": "אתה בטוח?",
+                "transliteration": "ata batuakh?",
+                "english": "Are you sure?"
+            },
+            {
+                "hebrew": "אתה אוהב סושי?",
+                "transliteration": "ata ohev sushi?",
+                "english": "Do you like sushi?"
+            },
+            {
+                "hebrew": "אתה כבר אכלת?",
+                "transliteration": "ata kvar akhalta?",
+                "english": "Have you already eaten?"
+            },
+            {
+                "hebrew": "הם עובדים יחד?",
+                "transliteration": "hem ovdim yakhad?",
+                "english": "Do they work together?"
+            }
+        ]
+    },
+    {
+        "id": "negation_simple",
+        "name": "Simple Negation with לא",
+        "category": "negation",
+        "description": "Negates a verb, adjective, or state by placing לא before it.",
+        "structure": "[subject] לא [verb/adjective]",
+        "notes": "לא always comes directly before the word it negates.",
+        "examples": [
+            {
+                "hebrew": "זה לא טעים",
+                "transliteration": "ze lo ta'im",
+                "english": "This isn't tasty"
+            },
+            {
+                "hebrew": "היא לא אמרה כלום",
+                "transliteration": "hi lo amra klum",
+                "english": "She didn't say anything"
+            },
+            {
+                "hebrew": "הוא לא בא לשיעור שלנו",
+                "transliteration": "hu lo ba lashiur shelanu",
+                "english": "He doesn't come to our class"
+            }
+        ]
+    },
+    {
+        "id": "negation_not_so",
+        "name": "Not So / Not Really (לא כל כך)",
+        "category": "negation",
+        "description": "Softened negation meaning 'not so much' or 'not really'.",
+        "structure": "[subject] לא כל כך [adjective]",
+        "notes": "לא כל כך is a fixed phrase. Less absolute than simple לא.",
+        "examples": [
+            {
+                "hebrew": "היא לא כל כך רעבה",
+                "transliteration": "hi lo kol kakh re'eva",
+                "english": "She's not so hungry"
+            },
+            {
+                "hebrew": "זה לא כל כך מסובך",
+                "transliteration": "ze lo kol kakh mesuvakh",
+                "english": "It's not so complicated"
+            },
+            {
+                "hebrew": "הוא לא כל כך עסוק",
+                "transliteration": "hu lo kol kakh asuk",
+                "english": "He's not so busy"
+            }
+        ]
+    },
+    {
+        "id": "negation_never",
+        "name": "Never (אף פעם לא)",
+        "category": "negation",
+        "description": "Expresses 'never' using double negation: אף פעם (not even once) + לא.",
+        "structure": "[subject] אף פעם לא [present verb]",
+        "notes": "Hebrew uses double negation for emphasis. אף פעם literally = 'not even one time'.",
+        "examples": [
+            {
+                "hebrew": "הוא אף פעם לא שותה קפה!",
+                "transliteration": "hu af pa'am lo shote kafe!",
+                "english": "He never drinks coffee!"
+            },
+            {
+                "hebrew": "אף פעם לא",
+                "transliteration": "af pa'am lo",
+                "english": "Never"
+            }
+        ]
+    },
+    {
+        "id": "negation_nobody_nothing",
+        "name": "Nobody / Nothing (אף אחד / שום דבר)",
+        "category": "negation",
+        "description": "Expresses 'nobody' or 'nothing' with double negation.",
+        "structure": "אף אחד לא [verb/adjective] / שום דבר לא [verb/adjective]",
+        "notes": "אף אחד = nobody, שום דבר = nothing. Both require לא before the verb. שום can also modify other nouns: שום + noun = no [noun].",
+        "examples": [
+            {
+                "hebrew": "אף אחד לא מושלם",
+                "transliteration": "af ekhad lo mushlam",
+                "english": "Nobody's perfect"
+            },
+            {
+                "hebrew": "שום דבר לא מושלם",
+                "transliteration": "shum davar lo mushlam",
+                "english": "Nothing is perfect"
+            },
+            {
+                "hebrew": "לא עשיתי כלום",
+                "transliteration": "lo asiti klum",
+                "english": "I didn't do anything"
+            }
+        ]
+    },
+    {
+        "id": "too_adjective",
+        "name": "Too + Adjective (מדי)",
+        "category": "modifier",
+        "description": "Expresses excess using מדי (too) after an adjective, or יותר מדי (too much).",
+        "structure": "[adjective] מדי / יותר מדי",
+        "notes": "מדי follows the adjective (opposite of English). יותר מדי = too much/many (standalone or after verb).",
+        "examples": [
+            {
+                "hebrew": "מתוק מדי",
+                "transliteration": "matok midai",
+                "english": "Too sweet"
+            },
+            {
+                "hebrew": "זה קשה מדי",
+                "transliteration": "ze kashe midai",
+                "english": "It's too hard"
+            },
+            {
+                "hebrew": "אכלתי יותר מדי",
+                "transliteration": "akhalti yoter midai",
+                "english": "I ate too much"
+            }
+        ]
+    },
+    {
+        "id": "already_kvar",
+        "name": "Already (כבר)",
+        "category": "modifier",
+        "description": "Indicates an action has already been completed or a state already exists.",
+        "structure": "[subject] כבר [past verb / state]",
+        "notes": "Often used in questions to ask 'have you already...?' or 'yet?'.",
+        "examples": [
+            {
+                "hebrew": "אני כבר אכלתי",
+                "transliteration": "ani kvar akhalti",
+                "english": "I already ate"
+            },
+            {
+                "hebrew": "את כבר במשרד?",
+                "transliteration": "et kvar bamisrad?",
+                "english": "Are you at the office yet?"
+            },
+            {
+                "hebrew": "אנחנו כבר אכלנו",
+                "transliteration": "anakhnu kvar akhalnu",
+                "english": "We already ate"
+            }
+        ]
+    },
+    {
+        "id": "still_adain",
+        "name": "Still (עדיין)",
+        "category": "modifier",
+        "description": "Indicates a continuing state or ongoing situation.",
+        "structure": "[subject] עדיין [state / present verb]",
+        "notes": "Placed before the predicate.",
+        "examples": [
+            {
+                "hebrew": "אני עדיין בפגישה",
+                "transliteration": "ani adain bapgisha",
+                "english": "I'm still in a meeting"
+            }
+        ]
+    },
+    {
+        "id": "almost_kimat",
+        "name": "Almost (כמעט)",
+        "category": "modifier",
+        "description": "Expresses near-completeness or hedging.",
+        "structure": "[subject] כמעט [adjective / verb]",
+        "notes": "Placed before the word it modifies.",
+        "examples": [
+            {
+                "hebrew": "היא כמעט בטוחה",
+                "transliteration": "hi kim'at betukha",
+                "english": "She's pretty sure, she's almost sure"
+            }
+        ]
+    },
+    {
+        "id": "even_afilu",
+        "name": "Even (אפילו)",
+        "category": "modifier",
+        "description": "Adds emphasis or surprise — 'even [someone/something]...'",
+        "structure": "אפילו [subject] [verb] ([object])",
+        "notes": "Placed before the surprising element.",
+        "examples": [
+            {
+                "hebrew": "אפילו לו עובד היום",
+                "transliteration": "afilu lo oved hayom",
+                "english": "Even Lou is working today"
+            },
+            {
+                "hebrew": "אפילו מדונה למדה עברית",
+                "transliteration": "afilu madonna lamda ivrit",
+                "english": "Even Madonna studied Hebrew"
+            },
+            {
+                "hebrew": "אפילו ביום ראשון",
+                "transliteration": "afilu bayom rishon",
+                "english": "Even on Sunday"
+            }
+        ]
+    },
+    {
+        "id": "emphatic_ken",
+        "name": "Emphatic כן (DID Do Something)",
+        "category": "modifier",
+        "description": "Uses כן (yes) before a verb for emphatic affirmation, like English 'DID do'.",
+        "structure": "[subject] כן [past verb]!",
+        "notes": "Used to contradict a denial or emphasize that something really happened.",
+        "examples": [
+            {
+                "hebrew": "אני כן עבדתי אתמול!",
+                "transliteration": "ani ken avadti etmol!",
+                "english": "I DID work yesterday!"
+            }
+        ]
+    },
+    {
+        "id": "think_that",
+        "name": "Think That (חושב ש)",
+        "category": "complex_clause",
+        "description": "Expresses opinion or belief using חושב/ת (think) + ש (that) + clause.",
+        "structure": "[subject] חושב/ת ש[clause]",
+        "notes": "חושב (m.) / חושבת (f.). The particle ש (she/sha) means 'that' and introduces the subordinate clause. Can be followed by כן (yes) or לא (no) for short answers.",
+        "examples": [
+            {
+                "hebrew": "אני חושב שכן",
+                "transliteration": "ani khoshev shakhen",
+                "english": "I think so"
+            },
+            {
+                "hebrew": "אני חושבת שלא",
+                "transliteration": "ani khoshevet shelo",
+                "english": "I don't think so"
+            }
+        ]
+    },
+    {
+        "id": "sure_that",
+        "name": "Sure That (בטוח ש)",
+        "category": "complex_clause",
+        "description": "Expresses certainty using בטוח/ה (sure) + ש (that) + clause.",
+        "structure": "[subject] בטוח/ה ש[clause]",
+        "notes": "בטוח (m.) / בטוחה (f.). The embedded clause is a full sentence.",
+        "examples": [
+            {
+                "hebrew": "הוא בטוח שהחלון פתוח",
+                "transliteration": "hu batuakh shehakhalon patu'akh",
+                "english": "He's sure that the window is open"
+            },
+            {
+                "hebrew": "היא בטוחה שהדלת פתוחה",
+                "transliteration": "hi betukha shehadelet ptukha",
+                "english": "She's sure that the door is open"
+            }
+        ]
+    },
+    {
+        "id": "because_of",
+        "name": "Because Of (בגלל)",
+        "category": "complex_clause",
+        "description": "Explains the cause or reason using בגלל (because of).",
+        "structure": "[clause] בגלל [noun/noun phrase]",
+        "notes": "בגלל introduces a noun (not a full clause). For 'because' + clause, use כי (ki).",
+        "examples": [
+            {
+                "hebrew": "הוא בלחץ בגלל הבוס",
+                "transliteration": "hu belakhats biglal habos",
+                "english": "He's stressed because of the boss"
+            },
+            {
+                "hebrew": "זה בגלל האהבה",
+                "transliteration": "ze biglal ha'ahava",
+                "english": "It's because of the love"
+            }
+        ]
+    },
+    {
+        "id": "when_clause",
+        "name": "When Clause (כש)",
+        "category": "complex_clause",
+        "description": "Conditional or temporal clause using כש (when/whenever).",
+        "structure": "כש[clause], [clause]",
+        "notes": "כש (kshe) is a contraction of כאשר (ka'asher). Attaches directly to the next word.",
+        "examples": [
+            {
+                "hebrew": "כשזה טוב, זה טוב",
+                "transliteration": "kshe'ze tov, ze tov",
+                "english": "When it's good, it's good"
+            }
+        ]
+    },
+    {
+        "id": "reported_speech",
+        "name": "Reported Speech / Indirect Question",
+        "category": "complex_clause",
+        "description": "Reporting what someone said or asked, using direct quotes or embedded questions.",
+        "structure": "[subject] אמר/שאל [quote / מה + clause]",
+        "notes": "Direct quotes use quotation marks. Indirect questions embed the question word (מה, איפה, etc.).",
+        "examples": [
+            {
+                "hebrew": "הוא אמר \"בוקר טוב\"",
+                "transliteration": "hu amar \"boker tov\"",
+                "english": "He said \"good morning\""
+            },
+            {
+                "hebrew": "שאלתי מה קרה",
+                "transliteration": "sha'alti ma kara",
+                "english": "I asked what happened"
+            },
+            {
+                "hebrew": "שון שאל את שילה",
+                "transliteration": "shon sha'al et shila",
+                "english": "Sean asked Sheila"
+            }
+        ]
+    },
+    {
+        "id": "frequency",
+        "name": "Frequency Expression (X Times Per Y)",
+        "category": "time_and_frequency",
+        "description": "Expresses how often something happens.",
+        "structure": "[number] פעמים ב[time period] / [verb] [number] פעמים ב[time period]",
+        "notes": "פעם אחת (once), פעמיים (twice), שלוש פעמים (three times). Time period uses ב: בשנה (per year), בשבוע (per week), ביום (per day).",
+        "examples": [
+            {
+                "hebrew": "הוא אוכל פעמיים ביום",
+                "transliteration": "hu okhel pa'amayim bayom",
+                "english": "He eats twice a day"
+            },
+            {
+                "hebrew": "פעמיים בשנה",
+                "transliteration": "pa'amayim bashana",
+                "english": "Twice a year"
+            },
+            {
+                "hebrew": "שלוש פעמים",
+                "transliteration": "shalosh pe'amim",
+                "english": "Three times"
+            },
+            {
+                "hebrew": "רק פעם אחת",
+                "transliteration": "rak pa'am akhat",
+                "english": "Only once"
+            }
+        ]
+    },
+    {
+        "id": "temporal_framing",
+        "name": "Temporal Framing (Time Word + Clause)",
+        "category": "time_and_frequency",
+        "description": "Setting the time context at the start of a sentence.",
+        "structure": "[time word/phrase] [clause]",
+        "notes": "Common time words: אתמול (yesterday), היום (today), מחר (tomorrow), עכשיו (now), אחרי (after), תמיד (always).",
+        "examples": [
+            {
+                "hebrew": "אתמול הוא הלך לים",
+                "transliteration": "etmol hu halakh layam",
+                "english": "Yesterday he went to the beach"
+            },
+            {
+                "hebrew": "מחר בצוהריים",
+                "transliteration": "makhar batsohorayim",
+                "english": "Tomorrow at noon"
+            },
+            {
+                "hebrew": "אתמול אחרי הצוהריים",
+                "transliteration": "etmol akharei hatsohorayim",
+                "english": "Yesterday afternoon"
+            }
+        ]
+    },
+    {
+        "id": "again_more",
+        "name": "Again / In A Bit (עוד)",
+        "category": "time_and_frequency",
+        "description": "The word עוד expresses 'more', 'again', or 'in a bit' depending on context.",
+        "structure": "עוד פעם [verb/adjective] / עוד מעט [clause]",
+        "notes": "עוד פעם = again/one more time. עוד מעט = in a bit/very soon. עוד can also mean 'another/more'.",
+        "examples": [
+            {
+                "hebrew": "הוא עוד פעם רעב",
+                "transliteration": "hu od pa'am ra'ev",
+                "english": "He's hungry again"
+            },
+            {
+                "hebrew": "עוד מעט העוגה מוכנה",
+                "transliteration": "od me'at ha'uga mukhana",
+                "english": "The cake will be ready in a bit"
+            },
+            {
+                "hebrew": "עוד פעם",
+                "transliteration": "od pa'am",
+                "english": "One more time, again"
+            }
+        ]
+    },
+    {
+        "id": "location_and_direction",
+        "name": "Location (ב) vs. Direction (ל / ה-)",
+        "category": "preposition",
+        "description": "Hebrew distinguishes between being at a location (ב) and moving toward a destination (ל or -ה suffix).",
+        "structure": "Location: [verb] ב[place] / Direction: [verb] ל[place] or [place]-ה",
+        "notes": "ב = in/at (static). ל = to (direction). The suffix ה- on הביתה (homeward) is a directional marker. ליד = next to.",
+        "examples": [
+            {
+                "hebrew": "הוא יושב בסלון",
+                "transliteration": "hu yoshev basalon",
+                "english": "He is sitting in the living room"
+            },
+            {
+                "hebrew": "אנחנו הולכים הביתה",
+                "transliteration": "anakhnu holkhim habayta",
+                "english": "We are going home"
+            },
+            {
+                "hebrew": "הם יושבים ליד החלון",
+                "transliteration": "hem yoshvim leyad hakhalon",
+                "english": "They are sitting next to the window"
+            },
+            {
+                "hebrew": "היא טסה לספרד",
+                "transliteration": "hi tasa lesfarad",
+                "english": "She's flying to Spain"
+            }
+        ]
+    },
+    {
+        "id": "direct_object_et",
+        "name": "Direct Object Marker (את)",
+        "category": "preposition",
+        "description": "Definite direct objects require the marker את (et) before them. Indefinite objects do not.",
+        "structure": "[subject] [verb] את [definite noun] / [subject] [verb] [indefinite noun]",
+        "notes": "את is required before nouns with ה (the), proper names, and pronouns (אותי, אותך, etc.). Not used before indefinite nouns.",
+        "examples": [
+            {
+                "hebrew": "הוא פותח את החלון",
+                "transliteration": "hu pote'akh et hakhalon",
+                "english": "He is opening the window"
+            },
+            {
+                "hebrew": "פגשתי את ביונסה",
+                "transliteration": "pagashti et beyonse",
+                "english": "I met Beyoncé"
+            },
+            {
+                "hebrew": "הוא אוהב אותה",
+                "transliteration": "hu ohev ota",
+                "english": "He loves her"
+            },
+            {
+                "hebrew": "הוא כתב אימייל",
+                "transliteration": "hu katav imeyl",
+                "english": "He wrote an email (indefinite — no את)"
+            }
+        ]
+    },
+    {
+        "id": "send_to_someone",
+        "name": "Verb + ל (To Someone) + את (Something)",
+        "category": "preposition",
+        "description": "Ditransitive pattern: doing something TO someone. The recipient takes ל, the object takes את.",
+        "structure": "[subject] [verb] ל[person] (את) [object]",
+        "notes": "Common with verbs like שולח (sends), אמר (said), שאל (asked). Pronoun suffixes: לי, לך, לו, לה, לנו, להם.",
+        "examples": [
+            {
+                "hebrew": "הוא שולח לי מייל",
+                "transliteration": "hu shole'akh li meyl",
+                "english": "He is sending me an email"
+            },
+            {
+                "hebrew": "שלחתי לה לינק",
+                "transliteration": "shalakhti la link",
+                "english": "I sent her a link"
+            },
+            {
+                "hebrew": "אמרתי לך!",
+                "transliteration": "amarti lekha!",
+                "english": "I told you!"
+            },
+            {
+                "hebrew": "שלחת לנו את הלינק?",
+                "transliteration": "shalakhta lanu et halink?",
+                "english": "Did you send us the link?"
+            }
+        ]
+    },
+    {
+        "id": "past_progressive",
+        "name": "Past Progressive (Was Doing)",
+        "category": "complex_clause",
+        "description": "Describes ongoing past actions using ישב/הלך (sat/went) + ו (and) + past verb, conveying 'was ...ing'.",
+        "structure": "[subject] [ישב past] ו[past verb]",
+        "notes": "The connector ו (ve/va = 'and') joins two past verbs to create a progressive sense.",
+        "examples": [
+            {
+                "hebrew": "הוא ישב וחשב",
+                "transliteration": "hu yashav vekhashav",
+                "english": "He was sitting and thinking"
+            },
+            {
+                "hebrew": "אני ישבתי וחשבתי",
+                "transliteration": "ani yashavti vekhashavti",
+                "english": "I was sitting and thinking"
+            }
+        ]
+    },
+    {
+        "id": "fixed_expressions",
+        "name": "Common Fixed Expressions & Idioms",
+        "category": "idiom",
+        "description": "Frequently used fixed phrases that function as single units.",
+        "structure": "(various)",
+        "notes": "These are learned as chunks rather than composed from grammar rules.",
+        "examples": [
+            {
+                "hebrew": "בדרך כלל",
+                "transliteration": "baderekh klal",
+                "english": "Usually"
+            },
+            {
+                "hebrew": "לא משנה",
+                "transliteration": "lo meshane",
+                "english": "It doesn't matter"
+            },
+            {
+                "hebrew": "מאה אחוז",
+                "transliteration": "me'a akhuz",
+                "english": "One hundred percent, no doubt"
+            },
+            {
+                "hebrew": "יאללה, סגור!",
+                "transliteration": "yalla, sagur!",
+                "english": "Let's do it! It's a deal!"
+            },
+            {
+                "hebrew": "שימו לב",
+                "transliteration": "simu lev",
+                "english": "Pay attention (lit. 'put heart')"
+            },
+            {
+                "hebrew": "לא כל כך",
+                "transliteration": "lo kol kakh",
+                "english": "Not really, not so much"
+            }
+        ]
+    }
+]
