@@ -700,7 +700,7 @@ function startQuiz() {
 // ── Mode switching ───────────────────────────────────────────
 
 document.querySelectorAll('.mode-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', async () => {
     const newMode = btn.dataset.mode;
     if (newMode === mode) return;
     mode = newMode;
@@ -713,9 +713,18 @@ document.querySelectorAll('.mode-btn').forEach(btn => {
       load();
     } else {
       document.getElementById('sentinel').style.display = 'none';
-      if (curatedPool) {
-        startQuiz();
+      // Ensure pool is loaded
+      if (!curatedPool) {
+        if (!ready) {
+          await init();
+          ready = true;
+        }
+        try {
+          const resp = await fetch('curated_sentences.json');
+          if (resp.ok) curatedPool = await resp.json();
+        } catch {}
       }
+      if (curatedPool) startQuiz();
     }
   });
 });
@@ -734,6 +743,7 @@ document.addEventListener('click', (e) => {
 // ── Hover highlighting ───────────────────────────────────────
 
 document.addEventListener('pointerenter', (e) => {
+  if (!e.target.closest) return;
   const w = e.target.closest('.w');
   if (!w) return;
   const card = w.closest('.sentence');
@@ -745,6 +755,7 @@ document.addEventListener('pointerenter', (e) => {
 }, true);
 
 document.addEventListener('pointerleave', (e) => {
+  if (!e.target.closest) return;
   const w = e.target.closest('.w');
   if (!w) return;
   const card = w.closest('.sentence');
