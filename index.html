@@ -21,6 +21,12 @@
   --badge-border: #e0e0e0;
   --hl: rgba(59, 130, 246, 0.15);
   --hl-border: rgba(59, 130, 246, 0.35);
+  --correct: rgba(34, 197, 94, 0.15);
+  --correct-border: rgba(34, 197, 94, 0.4);
+  --correct-fg: #16a34a;
+  --wrong: rgba(239, 68, 68, 0.15);
+  --wrong-border: rgba(239, 68, 68, 0.4);
+  --text: #1a1a1a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +43,12 @@
     --badge-border: #2a2a2a;
     --hl: rgba(59, 130, 246, 0.12);
     --hl-border: rgba(59, 130, 246, 0.3);
+    --correct: rgba(34, 197, 94, 0.1);
+    --correct-border: rgba(34, 197, 94, 0.35);
+    --correct-fg: #22c55e;
+    --wrong: rgba(239, 68, 68, 0.1);
+    --wrong-border: rgba(239, 68, 68, 0.35);
+    --text: #e4e4e4;
   }
 }
 
@@ -54,7 +66,7 @@ body {
 
 header {
   text-align: center;
-  padding: 2rem 0 1.25rem;
+  padding: 2rem 0 0.75rem;
   color: var(--header);
   font-size: 0.7rem;
   letter-spacing: 0.2em;
@@ -62,6 +74,48 @@ header {
   font-weight: 500;
 }
 
+/* Mode selector */
+.modes {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 1.25rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+  border-radius: 8px;
+  padding: 3px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mode-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--badge-fg);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  flex: 1;
+  text-align: center;
+}
+
+.mode-btn.active {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.mode-btn:not(.active):hover {
+  color: var(--text);
+}
+
+/* Sentence cards (learn mode) */
 .sentence {
   background: var(--card);
   border: 1px solid var(--border);
@@ -199,21 +253,179 @@ header {
   box-shadow: 0 0 0 1.5px var(--hl-border);
 }
 
+/* Quiz cards */
+.quiz-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.4rem 1.4rem 1.2rem;
+  margin-bottom: 0.6rem;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: show 0.35s ease forwards;
+  perspective: 800px;
+}
+
+.quiz-prompt {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--hebrew);
+  line-height: 1.55;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.quiz-prompt[dir="rtl"] {
+  direction: rtl;
+}
+
+.quiz-sub {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--translit);
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.quiz-opt {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 0.9rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.12s, border-color 0.12s, transform 0.12s;
+  line-height: 1.4;
+}
+
+.quiz-opt[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+.quiz-opt:hover:not(.chosen) {
+  background: var(--hl);
+  border-color: var(--hl-border);
+}
+
+.quiz-opt-lg {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+}
+
+.quiz-opt.correct {
+  background: var(--correct);
+  border-color: var(--correct-border);
+  color: var(--correct-fg);
+  font-weight: 600;
+}
+
+.quiz-opt.wrong {
+  background: var(--wrong);
+  border-color: var(--wrong-border);
+  opacity: 0.6;
+}
+
+.quiz-opt.chosen {
+  cursor: default;
+}
+
+/* Quiz result overlay */
+.quiz-result {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.quiz-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animations */
+@keyframes flipIn {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(90deg); }
+  100% { transform: rotateY(0deg); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-30px) scale(0.95); }
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-6px); }
+  30% { transform: translateX(6px); }
+  45% { transform: translateX(-4px); }
+  60% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+  90% { transform: translateX(2px); }
+}
+
+.quiz-card.shaking {
+  animation: shake 0.4s ease;
+  opacity: 1;
+  transform: none;
+}
+
+.quiz-card.flipping .quiz-result {
+  animation: flipIn 0.5s ease;
+  opacity: 1;
+  background: var(--correct);
+}
+
+.quiz-card.exiting {
+  animation: fadeUp 0.45s ease forwards;
+}
+
 #sentinel { height: 1px; }
 
 @media (max-width: 480px) {
   .wrap { padding: 0 0.75rem 3rem; }
-  header { padding: 1.5rem 0 1rem; }
+  header { padding: 1.5rem 0 0.5rem; }
   .sentence { padding: 1rem 1.1rem; border-radius: 8px; }
   .heb { font-size: 1.3rem; }
   .badges { gap: 0.25rem; margin-top: 0.45rem; }
   .badge { font-size: 0.6rem; padding: 0.12rem 0.35rem; }
+  .modes { max-width: 260px; }
+  .mode-btn { font-size: 0.65rem; padding: 0.3rem 0.5rem; }
+  .quiz-prompt { font-size: 1.2rem; }
+  .quiz-opt { font-size: 0.82rem; padding: 0.55rem 0.8rem; }
 }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>gnawsys</header>
+  <div class="modes">
+    <button class="mode-btn active" data-mode="learn">Learn</button>
+    <button class="mode-btn" data-mode="decode">Decode</button>
+    <button class="mode-btn" data-mode="encode">Encode</button>
+  </div>
   <div id="feed"></div>
   <div id="sentinel"></div>
 </div>
@@ -223,12 +435,86 @@ import { init, generateBatch } from './generator.js';
 const BATCH = 20;
 let busy = false;
 let ready = false;
+let mode = 'learn';
+let curatedPool = null;
+let quizQueue = [];
+let quizBusy = false;
 
 function esc(s) {
   const d = document.createElement('div');
   d.textContent = s;
   return d.innerHTML;
 }
+
+// ── Sound effects (Web Audio API) ──────────────────────────────
+
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+function playDing() {
+  const t = audioCtx.currentTime;
+  // Two pleasant tones
+  [523, 659].forEach((freq, i) => {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.15, t);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 0.5);
+    osc.connect(gain).connect(audioCtx.destination);
+    osc.start(t + i * 0.08);
+    osc.stop(t + 0.6);
+  });
+}
+
+function playBuzz() {
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sawtooth';
+  osc.frequency.value = 120;
+  gain.gain.setValueAtTime(0.12, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.3);
+}
+
+function playWhoosh() {
+  const t = audioCtx.currentTime;
+  const bufferSize = audioCtx.sampleRate * 0.3;
+  const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+  const src = audioCtx.createBufferSource();
+  src.buffer = buffer;
+  const filter = audioCtx.createBiquadFilter();
+  filter.type = 'bandpass';
+  filter.frequency.setValueAtTime(2000, t);
+  filter.frequency.exponentialRampToValueAtTime(200, t + 0.3);
+  filter.Q.value = 2;
+  const gain = audioCtx.createGain();
+  gain.gain.setValueAtTime(0.15, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.3);
+  src.connect(filter).connect(gain).connect(audioCtx.destination);
+  src.start(t);
+  src.stop(t + 0.35);
+}
+
+function playPop() {
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(600, t);
+  osc.frequency.exponentialRampToValueAtTime(200, t + 0.08);
+  gain.gain.setValueAtTime(0.12, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.12);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.15);
+}
+
+// ── Learn mode cards ──────────────────────────────────────────
 
 function buildCard(s) {
   const el = document.createElement('div');
@@ -272,7 +558,181 @@ function buildCard(s) {
   return el;
 }
 
-// Hover highlighting
+// ── Quiz mode cards ──────────────────────────────────────────
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function buildQuizCard(sentence, quizMode) {
+  if (!curatedPool || !sentence.distractors) return null;
+
+  const el = document.createElement('div');
+  el.className = 'quiz-card';
+
+  const distractorIndices = sentence.distractors;
+  const distractors = distractorIndices
+    .map(i => curatedPool[i])
+    .filter(Boolean);
+
+  if (distractors.length < 3) return null;
+
+  let promptHtml, options;
+
+  if (quizMode === 'decode') {
+    // Show Hebrew + transliteration, guess English
+    const audioAttr = sentence.audio ? ` data-audio="${esc(sentence.audio)}"` : '';
+    promptHtml =
+      `<div class="quiz-prompt" dir="rtl">${esc(sentence.hebrew)}</div>` +
+      `<div class="quiz-sub">${esc(sentence.transliteration)}</div>` +
+      `<div style="text-align:center;margin-bottom:0.6rem">` +
+        `<button class="play-btn"${audioAttr} data-hebrew="${esc(sentence.hebrew)}" aria-label="Play" style="margin:0 auto">&#9654;</button>` +
+      `</div>`;
+    options = shuffle([
+      { text: sentence.english, correct: true },
+      ...distractors.slice(0, 3).map(d => ({ text: d.english, correct: false })),
+    ]);
+  } else {
+    // Encode: show English, guess Hebrew (larger text, no transliteration)
+    promptHtml =
+      `<div class="quiz-prompt">${esc(sentence.english)}</div>`;
+    options = shuffle([
+      { text: sentence.hebrew, correct: true, rtl: true, large: true },
+      ...distractors.slice(0, 3).map(d => ({
+        text: d.hebrew, correct: false, rtl: true, large: true,
+      })),
+    ]);
+  }
+
+  const optionsHtml = options.map((o, i) => {
+    const dir = o.rtl ? ' dir="rtl"' : '';
+    const cls = 'quiz-opt' + (o.large ? ' quiz-opt-lg' : '');
+    const subHtml = o.sub ? `<div style="font-size:0.75rem;font-style:italic;color:var(--translit);margin-top:2px">${esc(o.sub)}</div>` : '';
+    return `<button class="${cls}" data-correct="${o.correct}" data-idx="${i}"${dir}>${esc(o.text)}${subHtml}</button>`;
+  }).join('');
+
+  el.innerHTML =
+    promptHtml +
+    `<div class="quiz-options">${optionsHtml}</div>` +
+    `<div class="quiz-result"></div>`;
+
+  return el;
+}
+
+function handleQuizAnswer(card, btn) {
+  if (card.classList.contains('answered')) return;
+
+  const isCorrect = btn.dataset.correct === 'true';
+
+  if (isCorrect) {
+    card.classList.add('answered');
+    btn.classList.add('correct', 'chosen');
+    // Mark others as chosen so hover stops
+    card.querySelectorAll('.quiz-opt:not(.correct)').forEach(o => o.classList.add('chosen'));
+
+    // Ding + flip
+    playDing();
+    const result = card.querySelector('.quiz-result');
+    result.textContent = '\u2713';
+    card.classList.add('flipping');
+
+    // Whoosh + fade out after flip
+    setTimeout(() => {
+      playWhoosh();
+      card.classList.remove('flipping');
+      card.classList.add('exiting');
+    }, 600);
+
+    // Remove card and show next
+    setTimeout(() => {
+      card.remove();
+      playPop();
+      showNextQuizCard();
+    }, 1050);
+  } else {
+    btn.classList.add('wrong', 'chosen');
+    playBuzz();
+    card.style.opacity = '1';
+    card.style.transform = 'none';
+    card.classList.add('shaking');
+    setTimeout(() => card.classList.remove('shaking'), 400);
+  }
+}
+
+// ── Quiz queue management ────────────────────────────────────
+
+function refillQuizQueue() {
+  if (!curatedPool) return;
+  const eligible = curatedPool.filter(s => s.distractors && s.distractors.length >= 3);
+  const batch = shuffle([...eligible]).slice(0, 200);
+  quizQueue.push(...batch);
+}
+
+function showNextQuizCard() {
+  if (quizBusy) return;
+  quizBusy = true;
+
+  if (quizQueue.length < 5) refillQuizQueue();
+  const sentence = quizQueue.shift();
+  if (!sentence) { quizBusy = false; return; }
+
+  const card = buildQuizCard(sentence, mode);
+  if (!card) { quizBusy = false; showNextQuizCard(); return; }
+
+  const feed = document.getElementById('feed');
+  feed.appendChild(card);
+  quizBusy = false;
+}
+
+function startQuiz() {
+  const feed = document.getElementById('feed');
+  feed.innerHTML = '';
+  quizQueue = [];
+  refillQuizQueue();
+  // Show a few cards
+  for (let i = 0; i < 3; i++) showNextQuizCard();
+}
+
+// ── Mode switching ───────────────────────────────────────────
+
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const newMode = btn.dataset.mode;
+    if (newMode === mode) return;
+    mode = newMode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('feed').innerHTML = '';
+
+    if (mode === 'learn') {
+      document.getElementById('sentinel').style.display = '';
+      load();
+    } else {
+      document.getElementById('sentinel').style.display = 'none';
+      if (curatedPool) {
+        startQuiz();
+      }
+    }
+  });
+});
+
+// ── Quiz click handler ───────────────────────────────────────
+
+document.addEventListener('click', (e) => {
+  const opt = e.target.closest('.quiz-opt');
+  if (opt) {
+    const card = opt.closest('.quiz-card');
+    if (card) handleQuizAnswer(card, opt);
+    return;
+  }
+});
+
+// ── Hover highlighting ───────────────────────────────────────
+
 document.addEventListener('pointerenter', (e) => {
   const w = e.target.closest('.w');
   if (!w) return;
@@ -294,7 +754,8 @@ document.addEventListener('pointerleave', (e) => {
   if (enDiv) enDiv.classList.remove('hl-line');
 }, true);
 
-// Audio playback
+// ── Audio playback ───────────────────────────────────────────
+
 let currentAudio = null;
 const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5];
 
@@ -303,7 +764,6 @@ function getCardSpeed(card) {
   return btn ? parseFloat(btn.textContent) : 1;
 }
 
-// Speed button: cycle through rates
 document.addEventListener('click', (e) => {
   const sbtn = e.target.closest('.speed-btn');
   if (sbtn) {
@@ -317,28 +777,27 @@ document.addEventListener('click', (e) => {
   const btn = e.target.closest('.play-btn');
   if (!btn) return;
 
-  // Stop any currently playing audio
+  // Resume audio context if suspended (browser autoplay policy)
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+
   if (currentAudio) {
     currentAudio.pause();
     currentAudio = null;
   }
   speechSynthesis.cancel();
 
-  const card = btn.closest('.sentence');
+  const card = btn.closest('.sentence') || btn.closest('.quiz-card');
   const rate = card ? getCardSpeed(card) : 1;
   const audioId = btn.dataset.audio;
 
   if (audioId) {
-    // Pre-generated audio file
     const audio = new Audio(`audio/${audioId}.opus`);
     audio.playbackRate = rate;
     currentAudio = audio;
     audio.play().catch(() => {
-      // Opus not supported — fall back to Web Speech API
       speakHebrew(btn.dataset.hebrew, rate);
     });
   } else {
-    // Live-generated sentence — use Web Speech API
     speakHebrew(btn.dataset.hebrew, rate);
   }
 });
@@ -350,11 +809,18 @@ function speakHebrew(text, rate = 1) {
   speechSynthesis.speak(u);
 }
 
+// ── Learn mode loading ───────────────────────────────────────
+
 async function load() {
-  if (busy) return;
+  if (busy || mode !== 'learn') return;
   busy = true;
   if (!ready) {
     await init();
+    // Also load curated pool for quiz modes
+    try {
+      const resp = await fetch('curated_sentences.json');
+      if (resp.ok) curatedPool = await resp.json();
+    } catch {}
     ready = true;
   }
   const data = generateBatch(BATCH);
